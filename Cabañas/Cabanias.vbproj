@@ -1,0 +1,754 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BE3CA8BE-78C3-47FF-98BA-CD4F533BBBB4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Cabañas.frmArranque</StartupObject>
+    <RootNamespace>Cabañas</RootNamespace>
+    <AssemblyName>Cabañas</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ManifestCertificateThumbprint>A1CBC1E2237CAD364ACB8EBB5C93B958593819B5</ManifestCertificateThumbprint>
+    <ManifestKeyFile>Cabanias_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>false</SignManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>C:\Users\Ruben\Desktop\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ApplicationIcon>icono.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Cabañas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Cabañas.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\WINDOWS\assembly\GAC_MSIL\System.Web.Services\2.0.0.0__b03f5f7f11d50a3a\System.Web.Services.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BotonAceptar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BotonActualizar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BotonAgregar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BotonBuscar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BotonCancelar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BotonCancelarRes.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BotonCerrar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BotonConsulCostos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BotonDetalleCancReserva.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BotonEliminar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BotonEliminarFrm.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BotonModificar.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BotonNuevaReserva.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="BotonPagos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entidades\Adicionales.vb" />
+    <Compile Include="Entidades\BotonReservas.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entidades\Cancelaciones.vb" />
+    <Compile Include="Entidades\FlpCabanias.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Entidades\Pagos.vb" />
+    <Compile Include="Entidades\Servicios.vb" />
+    <Compile Include="Huecos.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="IU\frmArranque.Designer.vb">
+      <DependentUpon>frmArranque.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\frmArranque.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\frmCancelaciones.Designer.vb">
+      <DependentUpon>frmCancelaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\frmCancelaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\frmPagos.Designer.vb">
+      <DependentUpon>frmPagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\frmPagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\lstCabaniaServicios.Designer.vb">
+      <DependentUpon>lstCabaniaServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\lstCabaniaServicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\frmAdicionales.Designer.vb">
+      <DependentUpon>frmAdicionales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\frmAdicionales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\lstCancelaciones.Designer.vb">
+      <DependentUpon>lstCancelaciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\lstCancelaciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\lstEstadosReservas.Designer.vb">
+      <DependentUpon>lstEstadosReservas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\lstEstadosReservas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\lstPagos.Designer.vb">
+      <DependentUpon>lstPagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\lstPagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\lstProveedor.Designer.vb">
+      <DependentUpon>lstProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\lstProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\lstReservasAdicionales.Designer.vb">
+      <DependentUpon>lstReservasAdicionales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\lstReservasAdicionales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\frmServicios.Designer.vb">
+      <DependentUpon>frmServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\frmServicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\grafReservas.Designer.vb">
+      <DependentUpon>grafReservas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\grafReservas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entidades\Cabanias.vb" />
+    <Compile Include="Entidades\Conexiones.vb" />
+    <Compile Include="Entidades\Reservas.vb" />
+    <Compile Include="IU\lstAdicionales.Designer.vb">
+      <DependentUpon>lstAdicionales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\lstAdicionales.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\lstConsHuesped.Designer.vb">
+      <DependentUpon>lstConsHuesped.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\lstConsHuesped.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\frmReservas.Designer.vb">
+      <DependentUpon>frmReservas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\frmReservas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\lstReservas.Designer.vb">
+      <DependentUpon>lstReservas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\lstReservas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entidades\TipoCabania.vb" />
+    <Compile Include="IU\frmCabania.Designer.vb">
+      <DependentUpon>frmCabania.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\frmCabania.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\frmProveedor.Designer.vb">
+      <DependentUpon>frmProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\frmProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\frmGastos.Designer.vb">
+      <DependentUpon>frmGastos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\frmGastos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entidades\Gastos.vb" />
+    <Compile Include="IU\frmTipoCabania.Designer.vb">
+      <DependentUpon>frmTipoCabania.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\frmTipoCabania.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\lstGastos.Designer.vb">
+      <DependentUpon>lstGastos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\lstGastos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entidades\Proveedor.vb" />
+    <Compile Include="IU\lstcabania.Designer.vb">
+      <DependentUpon>lstcabania.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\lstcabania.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\lstTipoCabania.Designer.vb">
+      <DependentUpon>lstTipoCabania.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\lstTipoCabania.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\lstServicios.Designer.vb">
+      <DependentUpon>lstServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\lstServicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BotonAgregarFrm.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmDetallaCabanias.Designer.vb">
+      <DependentUpon>frmDetallaCabanias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmDetallaCabanias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmDetallaHuesped.Designer.vb">
+      <DependentUpon>frmDetallaHuesped.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmDetallaHuesped.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmDetallePersonal.Designer.vb">
+      <DependentUpon>frmDetallePersonal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmDetallePersonal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmDetalleProveedores.Designer.vb">
+      <DependentUpon>frmDetalleProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmDetalleProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmListadoCabanias.Designer.vb">
+      <DependentUpon>frmListadoCabanias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmListadoCabanias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmListadoHuespedes.Designer.vb">
+      <DependentUpon>frmListadoHuespedes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmListadoHuespedes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmListadoPagos.Designer.vb">
+      <DependentUpon>frmListadoPagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmListadoPagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmListadoProveedores.Designer.vb">
+      <DependentUpon>frmListadoProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmListadoProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmListadoReservas.Designer.vb">
+      <DependentUpon>frmListadoReservas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmListadoReservas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmListadoServicios.Designer.vb">
+      <DependentUpon>frmListadoServicios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmListadoServicios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptDetallaCabanias.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDetallaCabanias.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptDetalleHuesped.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDetalleHuesped.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptDetallePersonal.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDetallePersonal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptDetalleProveedores.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDetalleProveedores.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptListaadoServicios.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptListaadoServicios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptListadoCabanias.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptListadoCabanias.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptListadoHuespedes.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptListadoHuespedes.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptListadoPagos.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptListadoPagos.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptListadoProveedores.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptListadoProveedores.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptListadoReservas.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptListadoReservas.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Utiles\Validaciones.vb" />
+    <Compile Include="IU\frmHuesped.Designer.vb">
+      <DependentUpon>frmHuesped.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\frmHuesped.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\frmPersonal.Designer.vb">
+      <DependentUpon>frmPersonal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\frmPersonal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Entidades\Huespedes.vb" />
+    <Compile Include="IU\lstHuesped.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\lstHuesped.Designer.vb">
+      <DependentUpon>lstHuesped.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\frmPrincipal.Designer.vb">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\frmPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IU\lstPersonal.Designer.vb">
+      <DependentUpon>lstPersonal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="IU\lstPersonal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Entidades\Personal.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="IU\frmArranque.resx">
+      <DependentUpon>frmArranque.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\frmCancelaciones.resx">
+      <DependentUpon>frmCancelaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\frmPagos.resx">
+      <DependentUpon>frmPagos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\lstCabaniaServicios.resx">
+      <DependentUpon>lstCabaniaServicios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\frmAdicionales.resx">
+      <DependentUpon>frmAdicionales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\lstCancelaciones.resx">
+      <DependentUpon>lstCancelaciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\lstEstadosReservas.resx">
+      <DependentUpon>lstEstadosReservas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\lstPagos.resx">
+      <DependentUpon>lstPagos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\lstProveedor.resx">
+      <DependentUpon>lstProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\lstReservasAdicionales.resx">
+      <DependentUpon>lstReservasAdicionales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\frmServicios.resx">
+      <DependentUpon>frmServicios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\grafReservas.resx">
+      <DependentUpon>grafReservas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\lstAdicionales.resx">
+      <DependentUpon>lstAdicionales.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\lstConsHuesped.resx">
+      <DependentUpon>lstConsHuesped.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\frmReservas.resx">
+      <DependentUpon>frmReservas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\lstReservas.resx">
+      <DependentUpon>lstReservas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\frmCabania.resx">
+      <DependentUpon>frmCabania.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\frmProveedor.resx">
+      <DependentUpon>frmProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\frmGastos.resx">
+      <DependentUpon>frmGastos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\frmHuesped.resx">
+      <DependentUpon>frmHuesped.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\frmPersonal.resx">
+      <DependentUpon>frmPersonal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\frmTipoCabania.resx">
+      <DependentUpon>frmTipoCabania.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\lstHuesped.resx">
+      <DependentUpon>lstHuesped.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\lstPersonal.resx">
+      <DependentUpon>lstPersonal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\lstGastos.resx">
+      <DependentUpon>lstGastos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\lstcabania.resx">
+      <DependentUpon>lstcabania.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\lstTipoCabania.resx">
+      <DependentUpon>lstTipoCabania.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IU\lstServicios.resx">
+      <DependentUpon>lstServicios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmDetallaCabanias.resx">
+      <DependentUpon>frmDetallaCabanias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmDetallaHuesped.resx">
+      <DependentUpon>frmDetallaHuesped.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmDetallePersonal.resx">
+      <DependentUpon>frmDetallePersonal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmDetalleProveedores.resx">
+      <DependentUpon>frmDetalleProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmListadoCabanias.resx">
+      <DependentUpon>frmListadoCabanias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmListadoHuespedes.resx">
+      <DependentUpon>frmListadoHuespedes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmListadoPagos.resx">
+      <DependentUpon>frmListadoPagos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmListadoProveedores.resx">
+      <DependentUpon>frmListadoProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmListadoReservas.resx">
+      <DependentUpon>frmListadoReservas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmListadoServicios.resx">
+      <DependentUpon>frmListadoServicios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptDetallaCabanias.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDetallaCabanias.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptDetalleHuesped.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDetalleHuesped.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptDetallePersonal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDetallePersonal.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptDetalleProveedores.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDetalleProveedores.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptListaadoServicios.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptListaadoServicios.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptListadoCabanias.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptListadoCabanias.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptListadoHuespedes.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptListadoHuespedes.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptListadoPagos.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptListadoPagos.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptListadoProveedores.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptListadoProveedores.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptListadoReservas.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptListadoReservas.vb</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icono.ico" />
+    <Content Include="Recursos\03.jpg" />
+    <Content Include="Recursos\fondo.jpg" />
+    <Content Include="Recursos\lunamorena.000.s4.jpg" />
+    <None Include="Resources\BotonAceptarMaderaBlanco.png" />
+    <None Include="Resources\BotonAceptarMaderaNegro.png" />
+    <None Include="Resources\BotonAgregarMaderaBlanco.png" />
+    <None Include="Resources\BotonAgregarMaderaNegro.png" />
+    <None Include="Resources\BotonCancelarMaderaBlanco.png" />
+    <None Include="Resources\BotonCancelarMaderaNegro.png" />
+    <None Include="Resources\BotonBuscarMaderaNegro.png" />
+    <None Include="Resources\BotonBuscarMaderaBlanco.png" />
+    <None Include="Resources\BotonAgregarMaderaNegroFrm.png" />
+    <None Include="Resources\BotonAgregarMaderaBlancoFrm.png" />
+    <None Include="Resources\botoncancreservablanco.png" />
+    <None Include="Resources\botoncancreservanegro.png" />
+    <None Include="Resources\BotonActualizarMaderaNegro.png" />
+    <None Include="Resources\BotonActualizarMaderaBlanco.png" />
+    <Content Include="Resources\BotonCerrar1.png" />
+    <Content Include="Resources\BotonCerrar2.png" />
+    <None Include="Resources\BotonNuevaReservaMaderaBlanco.png" />
+    <None Include="Resources\BotonNuevaReservaMaderaNegro.png" />
+    <None Include="Resources\IconoHuespedSombra2.png" />
+    <None Include="Resources\IconoCalendarioSombra.png" />
+    <None Include="Resources\IconoCabaniaSombra.png" />
+    <None Include="Resources\BotonEleiminarMaderaBlanco.png" />
+    <None Include="Resources\BotonCerrarMaderaNegro.png" />
+    <None Include="Resources\BotonCerrarMaderaBlanco.png" />
+    <None Include="Resources\BotonDetalleCancelacionMaderaBlanco.png" />
+    <None Include="Resources\BotonDetalleCancelacionMaderaNegro.png" />
+    <None Include="Resources\BotonConsultarCostosMaderaBlanco.png" />
+    <None Include="Resources\BotonConsultarCostosMaderaNegro.png" />
+    <None Include="Resources\BotonEliminarMaderaNegro.png" />
+    <None Include="Resources\BotonEliminarMaderaBlancoFrm.png" />
+    <None Include="Resources\BotonEliminarMaderaNegroFrm.png" />
+    <None Include="Resources\BotonPagosMaderaNegro.png" />
+    <None Include="Resources\BotonPagosMaderaBlanco.png" />
+    <None Include="Resources\BotonModificarMaderaNegro.png" />
+    <None Include="Resources\BotonModificarMaderaBlanco.png" />
+    <None Include="Resources\IconoHuespedSombra.png" />
+    <None Include="Resources\IconoHuesped.png" />
+    <None Include="Resources\IconoCalendario2.png" />
+    <None Include="Resources\IconoCabania.png" />
+    <None Include="Resources\FondoMaderaPanel.png" />
+    <None Include="Resources\FondoMaderaClaro3.png" />
+    <None Include="Resources\icono calendario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

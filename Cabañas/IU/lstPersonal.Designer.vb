@@ -22,7 +22,7 @@ Partial Class z
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(z))
         Me.dgvPersonal = New System.Windows.Forms.DataGridView
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer
@@ -31,6 +31,7 @@ Partial Class z
         Me.RectangleShape2 = New Cabañas.BotonModificar
         Me.RectangleShape1 = New Cabañas.BotonAgregar
         Me.btnDetalle = New System.Windows.Forms.Button
+        Me.btnListado = New System.Windows.Forms.Button
         CType(Me.dgvPersonal, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -44,14 +45,14 @@ Partial Class z
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvPersonal.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(153, Byte), Integer))
-        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvPersonal.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvPersonal.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvPersonal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvPersonal.Location = New System.Drawing.Point(12, 12)
         Me.dgvPersonal.MultiSelect = False
@@ -114,12 +115,21 @@ Partial Class z
         '
         'btnDetalle
         '
-        Me.btnDetalle.Location = New System.Drawing.Point(562, 426)
+        Me.btnDetalle.Location = New System.Drawing.Point(532, 433)
         Me.btnDetalle.Name = "btnDetalle"
         Me.btnDetalle.Size = New System.Drawing.Size(75, 23)
         Me.btnDetalle.TabIndex = 5
         Me.btnDetalle.Text = "Detalle"
         Me.btnDetalle.UseVisualStyleBackColor = True
+        '
+        'btnListado
+        '
+        Me.btnListado.Location = New System.Drawing.Point(451, 433)
+        Me.btnListado.Name = "btnListado"
+        Me.btnListado.Size = New System.Drawing.Size(75, 23)
+        Me.btnListado.TabIndex = 6
+        Me.btnListado.Text = "Listado"
+        Me.btnListado.UseVisualStyleBackColor = True
         '
         'z
         '
@@ -129,6 +139,7 @@ Partial Class z
         Me.BackgroundImage = Global.Cabañas.My.Resources.Resources.FondoMaderaPanel
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(984, 468)
+        Me.Controls.Add(Me.btnListado)
         Me.Controls.Add(Me.btnDetalle)
         Me.Controls.Add(Me.dgvPersonal)
         Me.Controls.Add(Me.ShapeContainer1)
@@ -149,4 +160,5 @@ Partial Class z
     Friend WithEvents RectangleShape3 As Cabañas.BotonEliminar
     Friend WithEvents RectangleShape4 As Cabañas.BotonCerrar
     Friend WithEvents btnDetalle As System.Windows.Forms.Button
+    Friend WithEvents btnListado As System.Windows.Forms.Button
 End Class

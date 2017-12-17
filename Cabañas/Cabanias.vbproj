@@ -365,6 +365,12 @@
     <Compile Include="Reportes\frmListadoPagos.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\frmListadoPersonal.Designer.vb">
+      <DependentUpon>frmListadoPersonal.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmListadoPersonal.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\frmListadoProveedores.Designer.vb">
       <DependentUpon>frmListadoProveedores.vb</DependentUpon>
     </Compile>
@@ -625,6 +631,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmListadoPagos.resx">
       <DependentUpon>frmListadoPagos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmListadoPersonal.resx">
+      <DependentUpon>frmListadoPersonal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmListadoProveedores.resx">
       <DependentUpon>frmListadoProveedores.vb</DependentUpon>

@@ -31,6 +31,8 @@ Partial Class lstAdicional
         Me.RectangleShape3 = New Cabañas.BotonEliminar
         Me.RectangleShape2 = New Cabañas.BotonModificar
         Me.RectangleShape1 = New Cabañas.BotonAgregar
+        Me.btnListado = New System.Windows.Forms.Button
+        Me.btnDetalle = New System.Windows.Forms.Button
         CType(Me.DgvAdicionales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -82,6 +84,7 @@ Partial Class lstAdicional
         '
         'RectangleShape4
         '
+        Me.RectangleShape4.BackgroundImage = CType(resources.GetObject("RectangleShape4.BackgroundImage"), System.Drawing.Image)
         Me.RectangleShape4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape4.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape4.CornerRadius = 17
@@ -119,6 +122,24 @@ Partial Class lstAdicional
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.Size = New System.Drawing.Size(122, 35)
         '
+        'btnListado
+        '
+        Me.btnListado.Location = New System.Drawing.Point(519, 426)
+        Me.btnListado.Name = "btnListado"
+        Me.btnListado.Size = New System.Drawing.Size(75, 23)
+        Me.btnListado.TabIndex = 2
+        Me.btnListado.Text = "Listado"
+        Me.btnListado.UseVisualStyleBackColor = True
+        '
+        'btnDetalle
+        '
+        Me.btnDetalle.Location = New System.Drawing.Point(610, 426)
+        Me.btnDetalle.Name = "btnDetalle"
+        Me.btnDetalle.Size = New System.Drawing.Size(75, 23)
+        Me.btnDetalle.TabIndex = 3
+        Me.btnDetalle.Text = "Detalle"
+        Me.btnDetalle.UseVisualStyleBackColor = True
+        '
         'lstAdicional
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -126,6 +147,8 @@ Partial Class lstAdicional
         Me.BackgroundImage = Global.Cabañas.My.Resources.Resources.FondoMaderaPanel
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(984, 461)
+        Me.Controls.Add(Me.btnDetalle)
+        Me.Controls.Add(Me.btnListado)
         Me.Controls.Add(Me.DgvAdicionales)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.DoubleBuffered = True
@@ -142,4 +165,6 @@ Partial Class lstAdicional
     Friend WithEvents RectangleShape3 As Cabañas.BotonEliminar
     Friend WithEvents RectangleShape2 As Cabañas.BotonModificar
     Friend WithEvents RectangleShape1 As Cabañas.BotonAgregar
+    Friend WithEvents btnListado As System.Windows.Forms.Button
+    Friend WithEvents btnDetalle As System.Windows.Forms.Button
 End Class

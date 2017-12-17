@@ -35,16 +35,17 @@ Partial Class frmDetallePersonal
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.ReportSource = Me.rptDetallePersonal1
-        Me.CrystalReportViewer1.Size = New System.Drawing.Size(756, 411)
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(541, 310)
         Me.CrystalReportViewer1.TabIndex = 0
         '
         'frmDetallePersonal
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(756, 411)
+        Me.ClientSize = New System.Drawing.Size(541, 310)
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Name = "frmDetallePersonal"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "frmDetallePersonal"
         Me.ResumeLayout(False)
 

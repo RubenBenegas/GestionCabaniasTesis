@@ -35,16 +35,17 @@ Partial Class frmListadoCabanias
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.ReportSource = Me.rptListadoCabanias1
-        Me.CrystalReportViewer1.Size = New System.Drawing.Size(284, 261)
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(343, 318)
         Me.CrystalReportViewer1.TabIndex = 0
         '
         'frmListadoCabanias
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(284, 261)
+        Me.ClientSize = New System.Drawing.Size(343, 318)
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Name = "frmListadoCabanias"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "frmListadoCabanias"
         Me.ResumeLayout(False)
 

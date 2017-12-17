@@ -323,6 +323,12 @@
     <Compile Include="Reportes\frmDetallaHuesped.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\frmDetalleAdicionales.Designer.vb">
+      <DependentUpon>frmDetalleAdicionales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmDetalleAdicionales.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\frmDetallePersonal.Designer.vb">
       <DependentUpon>frmDetallePersonal.vb</DependentUpon>
     </Compile>
@@ -333,6 +339,12 @@
       <DependentUpon>frmDetalleProveedores.vb</DependentUpon>
     </Compile>
     <Compile Include="Reportes\frmDetalleProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reportes\frmListadoAdicionales.Designer.vb">
+      <DependentUpon>frmListadoAdicionales.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmListadoAdicionales.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Reportes\frmListadoCabanias.Designer.vb">
@@ -377,6 +389,12 @@
       <DependentUpon>rptDetallaCabanias.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Reportes\rptDetalleAdicionales.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptDetalleAdicionales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Reportes\rptDetalleHuesped.vb">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -399,6 +417,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptListaadoServicios.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptListadoAdicionales.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptListadoAdicionales.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reportes\rptListadoCabanias.vb">
@@ -581,11 +605,17 @@
     <EmbeddedResource Include="Reportes\frmDetallaHuesped.resx">
       <DependentUpon>frmDetallaHuesped.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmDetalleAdicionales.resx">
+      <DependentUpon>frmDetalleAdicionales.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmDetallePersonal.resx">
       <DependentUpon>frmDetallePersonal.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmDetalleProveedores.resx">
       <DependentUpon>frmDetalleProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmListadoAdicionales.resx">
+      <DependentUpon>frmListadoAdicionales.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmListadoCabanias.resx">
       <DependentUpon>frmListadoCabanias.vb</DependentUpon>
@@ -609,6 +639,10 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptDetallaCabanias.vb</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptDetalleAdicionales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptDetalleAdicionales.vb</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\rptDetalleHuesped.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptDetalleHuesped.vb</LastGenOutput>
@@ -624,6 +658,10 @@
     <EmbeddedResource Include="Reportes\rptListaadoServicios.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptListaadoServicios.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptListadoAdicionales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptListadoAdicionales.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\rptListadoCabanias.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

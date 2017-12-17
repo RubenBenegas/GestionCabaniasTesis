@@ -45,6 +45,7 @@ Partial Class frmListadoServicios
         Me.ClientSize = New System.Drawing.Size(284, 261)
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Name = "frmListadoServicios"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "frmListadoServicios"
         Me.ResumeLayout(False)
 

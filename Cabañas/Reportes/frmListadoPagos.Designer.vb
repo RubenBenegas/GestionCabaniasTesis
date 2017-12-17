@@ -23,9 +23,9 @@ Partial Class frmListadoPagos
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.rptPagos = New CrystalDecisions.Windows.Forms.CrystalReportViewer
+        Me.rptListadoPagos3 = New Cabañas.rptListadoPagos
         Me.rptListadoPagos2 = New Cabañas.rptListadoPagos
         Me.rptListadoPagos1 = New Cabañas.rptListadoPagos
-        Me.rptListadoPagos3 = New Cabañas.rptListadoPagos
         Me.SuspendLayout()
         '
         'rptPagos
@@ -37,16 +37,17 @@ Partial Class frmListadoPagos
         Me.rptPagos.Location = New System.Drawing.Point(0, 0)
         Me.rptPagos.Name = "rptPagos"
         Me.rptPagos.ReportSource = Me.rptListadoPagos3
-        Me.rptPagos.Size = New System.Drawing.Size(496, 392)
+        Me.rptPagos.Size = New System.Drawing.Size(524, 340)
         Me.rptPagos.TabIndex = 0
         '
         'frmListadoPagos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(496, 392)
+        Me.ClientSize = New System.Drawing.Size(524, 340)
         Me.Controls.Add(Me.rptPagos)
         Me.Name = "frmListadoPagos"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent
         Me.Text = "frmListadoPagos"
         Me.ResumeLayout(False)
 

@@ -269,7 +269,7 @@ Public Class Gastos
 
 
 
-    Public Function GastosCalcularPorCategoria(ByVal idCategoria As Integer) As Decimal
+    Public Function GastosCalcularPorCategoria(ByVal idCategoria As Integer, ByVal fechaDesde As Date, ByVal fechaHasta As Date) As Decimal
         Try
             abrirConexion()
 
@@ -277,6 +277,8 @@ Public Class Gastos
             Dim objComando As New SqlCommand("GastosCalcularPorCategoria", objConexion)
             objComando.CommandType = CommandType.StoredProcedure
             objComando.Parameters.AddWithValue("@IdCategoria", idCategoria)
+            objComando.Parameters.AddWithValue("@fechaDesde", fechaDesde)
+            objComando.Parameters.AddWithValue("@fechaHasta", fechaHasta)
             Dim objDataTable As New Data.DataTable
             Dim objDataAdapter As New SqlDataAdapter(objComando)
             objDataAdapter.Fill(objDataTable)
@@ -293,12 +295,14 @@ Public Class Gastos
     End Function
 
 
-    Public Sub GastosFiltrarPorCategoria(ByVal idCategoria As Integer, ByVal tabla As DataGridView)
+    Public Sub GastosFiltrarPorCategoria(ByVal idCategoria As Integer, ByVal fechaDesde As Date, ByVal fechaHasta As Date, ByVal tabla As DataGridView)
         abrirConexion()
 
         Dim objComando As New SqlCommand("GastosFiltrarPorCategoria", objConexion)
         objComando.CommandType = CommandType.StoredProcedure
         objComando.Parameters.AddWithValue("@idCategoria", idCategoria)
+        objComando.Parameters.AddWithValue("@fechaDesde", fechaDesde)
+        objComando.Parameters.AddWithValue("@fechaHasta", fechaHasta)
 
         Dim objDataTable As New Data.DataTable
         Dim objDataAdapter As New SqlDataAdapter(objComando)

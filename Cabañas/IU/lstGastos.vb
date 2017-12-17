@@ -77,8 +77,8 @@
 
     Private Sub RectangleShape5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RectangleShape5.Click
 
-        Gastos.GastosFiltrarPorCategoria(cmbCategoria.SelectedValue, dgvGastos)
-        txtTotal.Text = Gastos.GastosCalcularPorCategoria(cmbCategoria.SelectedValue)
+        Gastos.GastosFiltrarPorCategoria(cmbCategoria.SelectedValue, dtpFechaDesde.Value, dtpFechaHasta.Value, dgvGastos)
+        txtTotal.Text = Gastos.GastosCalcularPorCategoria(cmbCategoria.SelectedValue, dtpFechaDesde.Value, dtpFechaHasta.Value)
 
     End Sub
 End Class

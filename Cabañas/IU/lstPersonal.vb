@@ -62,7 +62,7 @@ Public Class z
         params.Clear()
         par.Value = idPersonal
         params.Add(par)
-        frmDetallePersonal.rptDetallePersonal1.DataSourceConnections.Item(0).SetConnection("localhost\SQLEXPRESS", "Cabania", True)
+        frmDetallePersonal.rptDetallePersonal1.DataSourceConnections.Item(0).SetConnection("RUBENPC\SQLEXPRESS", "Cabania", True)
         frmDetallePersonal.rptDetallePersonal1.DataDefinition.ParameterFields("idPersonal").ApplyCurrentValues(params)
         frmDetallePersonal.ShowDialog()
         frmDetallePersonal.Dispose()

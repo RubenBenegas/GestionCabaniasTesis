@@ -341,6 +341,12 @@
     <Compile Include="Reportes\frmDetalleProveedores.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Reportes\frmFacturaReserva.Designer.vb">
+      <DependentUpon>frmFacturaReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Reportes\frmFacturaReserva.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reportes\frmListadoAdicionales.Designer.vb">
       <DependentUpon>frmListadoAdicionales.vb</DependentUpon>
     </Compile>
@@ -417,6 +423,12 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>rptDetalleProveedores.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reportes\rptFacturaReserva.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>rptFacturaReserva.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
     <Compile Include="Reportes\rptListaadoServicios.vb">
@@ -620,6 +632,9 @@
     <EmbeddedResource Include="Reportes\frmDetalleProveedores.resx">
       <DependentUpon>frmDetalleProveedores.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\frmFacturaReserva.resx">
+      <DependentUpon>frmFacturaReserva.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmListadoAdicionales.resx">
       <DependentUpon>frmListadoAdicionales.vb</DependentUpon>
     </EmbeddedResource>
@@ -663,6 +678,10 @@
     <EmbeddedResource Include="Reportes\rptDetalleProveedores.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>rptDetalleProveedores.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptFacturaReserva.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>rptFacturaReserva.vb</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\rptListaadoServicios.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

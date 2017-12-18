@@ -1,4 +1,7 @@
-﻿Public Class frmReservas
+﻿
+Imports CrystalDecisions.Shared
+
+Public Class frmReservas
     Private modificar_ As Boolean
     Public Property modificar() As Boolean
         Get
@@ -69,7 +72,7 @@
 
         reserva.ReservasCargarAdicionales(idReserva, dgvServiciosAdicionales)
 
-        
+
 
 
         'reserva.CargarComboCabania(cmbIdCabania)
@@ -182,7 +185,7 @@
 
 
                 RectangleShape7.Visible = True
-                
+
 
             End If
 
@@ -554,7 +557,7 @@
         Else
             reserva.ReservasCabaniasFiltrarDisponibles(dtpFechaIngreso.Value, dtpFechaSalida.Value, cmbIdCabania)
         End If
-        
+
     End Sub
 #End Region
 
@@ -773,6 +776,19 @@
         frmCancelaciones.idReserva = txtId.Text
         frmCancelaciones.modificar = True
         frmCancelaciones.ShowDialog()
+    End Sub
+
+    Private Sub btnFacturaReserva_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnFacturaReserva.Click
+        Dim idReserva As Integer = CInt(txtId.Text)
+        Dim params As New ParameterValues
+        Dim par As New ParameterDiscreteValue
+        params.Clear()
+        par.Value = idReserva
+        params.Add(par)
+        frmFacturaReserva.rptFacturaReserva1.DataSourceConnections.Item(0).SetConnection("localhost\SQLEXPRESS", "Cabania", True)
+        frmFacturaReserva.rptFacturaReserva1.DataDefinition.ParameterFields("idReserva").ApplyCurrentValues(params)
+        frmFacturaReserva.ShowDialog()
+        frmFacturaReserva.Dispose()
     End Sub
 End Class
 

@@ -69,7 +69,7 @@ Public Class z
     End Sub
 
     Private Sub btnListado_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnListado.Click
-        'frmListadoPersonal.rptListadoPersonal1.DataSourceConnections.Item(0).SetConnection("localhost\SQLEXPRESS", "Cabania", True)
-        'frmListadoPersonal.ShowDialog()
+        frmListadoPersonal.rptLIstadoPersonal1.DataSourceConnections.Item(0).SetConnection("localhost\SQLEXPRESS", "Cabania", True)
+        frmListadoPersonal.ShowDialog()
     End Sub
 End Class

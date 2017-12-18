@@ -790,6 +790,19 @@ Public Class frmReservas
         frmFacturaReserva.ShowDialog()
         frmFacturaReserva.Dispose()
     End Sub
+
+    Private Sub btnFacturaA_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnFacturaA.Click
+        Dim idReserva As Integer = CInt(txtId.Text)
+        Dim params As New ParameterValues
+        Dim par As New ParameterDiscreteValue
+        params.Clear()
+        par.Value = idReserva
+        params.Add(par)
+        frmFacturaAdicional.rptFacturaAdicional1.DataSourceConnections.Item(0).SetConnection("localhost\SQLEXPRESS", "Cabania", True)
+        frmFacturaAdicional.rptFacturaAdicional1.DataDefinition.ParameterFields("@idReserva").ApplyCurrentValues(params)
+        frmFacturaAdicional.ShowDialog()
+        frmFacturaAdicional.Dispose()
+    End Sub
 End Class
 
 

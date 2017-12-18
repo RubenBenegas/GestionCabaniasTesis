@@ -76,6 +76,7 @@ Partial Class frmReservas
         Me.RectangleShape2 = New Cabañas.BotonEliminarFrm
         Me.RectangleShape1 = New Cabañas.BotonAgregarFrm
         Me.btnFacturaReserva = New System.Windows.Forms.Button
+        Me.btnFacturaA = New System.Windows.Forms.Button
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvServiciosAdicionales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -630,6 +631,15 @@ Partial Class frmReservas
         Me.btnFacturaReserva.Text = "Factura P"
         Me.btnFacturaReserva.UseVisualStyleBackColor = True
         '
+        'btnFacturaA
+        '
+        Me.btnFacturaA.Location = New System.Drawing.Point(424, 397)
+        Me.btnFacturaA.Name = "btnFacturaA"
+        Me.btnFacturaA.Size = New System.Drawing.Size(75, 23)
+        Me.btnFacturaA.TabIndex = 54
+        Me.btnFacturaA.Text = "Factura A"
+        Me.btnFacturaA.UseVisualStyleBackColor = True
+        '
         'frmReservas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -637,6 +647,7 @@ Partial Class frmReservas
         Me.BackgroundImage = Global.Cabañas.My.Resources.Resources.FondoMaderaPanel
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(514, 626)
+        Me.Controls.Add(Me.btnFacturaA)
         Me.Controls.Add(Me.btnFacturaReserva)
         Me.Controls.Add(Me.btnDetalleCancelacion)
         Me.Controls.Add(Me.dtpFechaPagoSenia)
@@ -744,4 +755,5 @@ Partial Class frmReservas
     Friend WithEvents RectangleShape8 As Cabañas.BotonConsulCostos
     Friend WithEvents RectangleShape9 As Cabañas.BotonDetalleCancReserva
     Friend WithEvents btnFacturaReserva As System.Windows.Forms.Button
+    Friend WithEvents btnFacturaA As System.Windows.Forms.Button
 End Class

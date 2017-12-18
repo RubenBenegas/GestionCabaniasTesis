@@ -35,14 +35,22 @@ Partial Class frmFacturaAdicional
         Me.CrystalReportViewer1.Location = New System.Drawing.Point(0, 0)
         Me.CrystalReportViewer1.Name = "CrystalReportViewer1"
         Me.CrystalReportViewer1.ReportSource = Me.rptFacturaAdicional1
+<<<<<<< .mine
+        Me.CrystalReportViewer1.Size = New System.Drawing.Size(364, 261)
+=======
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(687, 474)
+>>>>>>> .r22
         Me.CrystalReportViewer1.TabIndex = 0
         '
         'frmFacturaAdicional
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+<<<<<<< .mine
+        Me.ClientSize = New System.Drawing.Size(364, 261)
+=======
         Me.ClientSize = New System.Drawing.Size(687, 474)
+>>>>>>> .r22
         Me.Controls.Add(Me.CrystalReportViewer1)
         Me.Name = "frmFacturaAdicional"
         Me.Text = "frmFacturaAdicional"

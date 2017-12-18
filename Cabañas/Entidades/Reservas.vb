@@ -533,7 +533,7 @@ Public Class Reservas
             'tabla.Columns("id").Visible = False
             tabla.Columns("id").Width = 30
             tabla.Columns("Adicionales").AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill
-
+            tabla.Columns("idReserva").Visible = False
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally

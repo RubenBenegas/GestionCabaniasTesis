@@ -6,7 +6,8 @@ Public Class lstcabania
     Private Sub lstcabania_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         cabania.TraerTabCabania(dgvCabanias)
-
+        dgvCabanias.RowsDefaultCellStyle.BackColor = Color.AliceBlue
+        dgvCabanias.AlternatingRowsDefaultCellStyle.BackColor = Color.AntiqueWhite
 
     End Sub
 

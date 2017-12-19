@@ -6,7 +6,8 @@ Public Class lstAdicional
     Private Sub lstadicional_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Adicional.AdicionalesTraerTab(DgvAdicionales)
-
+        DgvAdicionales.RowsDefaultCellStyle.BackColor = Color.AliceBlue
+        DgvAdicionales.AlternatingRowsDefaultCellStyle.BackColor = Color.AntiqueWhite
 
     End Sub
 

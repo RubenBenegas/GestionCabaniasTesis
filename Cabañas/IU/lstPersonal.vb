@@ -5,6 +5,8 @@ Public Class z
 
     Private Sub lstPersonal_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         Personal.PersonalTraerTab(dgvPersonal)
+        dgvPersonal.RowsDefaultCellStyle.BackColor = Color.AliceBlue
+        dgvPersonal.AlternatingRowsDefaultCellStyle.BackColor = Color.AntiqueWhite
     End Sub
 
     Private Sub Editar()
@@ -72,4 +74,5 @@ Public Class z
         frmListadoPersonal.rptLIstadoPersonal1.DataSourceConnections.Item(0).SetConnection("localhost\SQLEXPRESS", "Cabania", True)
         frmListadoPersonal.ShowDialog()
     End Sub
+
 End Class

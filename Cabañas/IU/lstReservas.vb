@@ -2,6 +2,8 @@
     Dim reservas As New Reservas
     Private Sub lstReservas_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         reservas.TraerTabReservas(dgvReservas)
+        dgvReservas.RowsDefaultCellStyle.BackColor = Color.AliceBlue
+        dgvReservas.AlternatingRowsDefaultCellStyle.BackColor = Color.AntiqueWhite
     End Sub
 
     Private Sub Editar()

@@ -143,7 +143,6 @@ Public Class frmReservas
                 lblReembolso.Visible = True
                 RectangleShape7.Visible = False
                 RectangleShape9.Visible = True
-                btnDetalleCancelacion.Visible = True
 
                 'ACA CALCULAMOS EL REEMBOLSO Y HAY QUE LLEVARLO PARA EL LADO DE CANCELACIONES
                 If DateDiff(DateInterval.Day, cancelacion.fCancelacion, reserva.fIngreso) > 14 Then
@@ -181,7 +180,6 @@ Public Class frmReservas
                 lblImporteSenia.Visible = True
                 txtSenia.Visible = True
                 RectangleShape9.Visible = False
-                btnDetalleCancelacion.Visible = False
 
 
                 RectangleShape7.Visible = True
@@ -270,7 +268,6 @@ Public Class frmReservas
 
 
             RectangleShape7.Visible = False
-            btnDetalleCancelacion.Visible = False
 
             idEstado = 1
 

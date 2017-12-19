@@ -29,14 +29,14 @@ Partial Class lstGastos
         Me.txtTotal = New System.Windows.Forms.TextBox
         Me.Label1 = New System.Windows.Forms.Label
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer
-        Me.cmbCategoria = New System.Windows.Forms.ComboBox
-        Me.dtpFechaDesde = New System.Windows.Forms.DateTimePicker
-        Me.dtpFechaHasta = New System.Windows.Forms.DateTimePicker
         Me.RectangleShape5 = New Cabañas.BotonBuscar
         Me.RectangleShape4 = New Cabañas.BotonCerrar
         Me.RectangleShape3 = New Cabañas.BotonEliminar
         Me.RectangleShape2 = New Cabañas.BotonModificar
         Me.RectangleShape1 = New Cabañas.BotonAgregar
+        Me.cmbCategoria = New System.Windows.Forms.ComboBox
+        Me.dtpFechaDesde = New System.Windows.Forms.DateTimePicker
+        Me.dtpFechaHasta = New System.Windows.Forms.DateTimePicker
         CType(Me.dgvGastos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -49,7 +49,7 @@ Partial Class lstGastos
         Me.dgvGastos.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.dgvGastos.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.dgvGastos.BackgroundColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -112,32 +112,6 @@ Partial Class lstGastos
         Me.ShapeContainer1.TabIndex = 15
         Me.ShapeContainer1.TabStop = False
         '
-        'cmbCategoria
-        '
-        Me.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbCategoria.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbCategoria.FormattingEnabled = True
-        Me.cmbCategoria.Location = New System.Drawing.Point(10, 12)
-        Me.cmbCategoria.Name = "cmbCategoria"
-        Me.cmbCategoria.Size = New System.Drawing.Size(121, 23)
-        Me.cmbCategoria.TabIndex = 16
-        '
-        'dtpFechaDesde
-        '
-        Me.dtpFechaDesde.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFechaDesde.Location = New System.Drawing.Point(151, 12)
-        Me.dtpFechaDesde.Name = "dtpFechaDesde"
-        Me.dtpFechaDesde.Size = New System.Drawing.Size(81, 20)
-        Me.dtpFechaDesde.TabIndex = 17
-        '
-        'dtpFechaHasta
-        '
-        Me.dtpFechaHasta.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFechaHasta.Location = New System.Drawing.Point(247, 12)
-        Me.dtpFechaHasta.Name = "dtpFechaHasta"
-        Me.dtpFechaHasta.Size = New System.Drawing.Size(81, 20)
-        Me.dtpFechaHasta.TabIndex = 18
-        '
         'RectangleShape5
         '
         Me.RectangleShape5.BackgroundImage = CType(resources.GetObject("RectangleShape5.BackgroundImage"), System.Drawing.Image)
@@ -187,6 +161,32 @@ Partial Class lstGastos
         Me.RectangleShape1.Location = New System.Drawing.Point(10, 418)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.Size = New System.Drawing.Size(122, 35)
+        '
+        'cmbCategoria
+        '
+        Me.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbCategoria.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbCategoria.FormattingEnabled = True
+        Me.cmbCategoria.Location = New System.Drawing.Point(10, 12)
+        Me.cmbCategoria.Name = "cmbCategoria"
+        Me.cmbCategoria.Size = New System.Drawing.Size(121, 23)
+        Me.cmbCategoria.TabIndex = 16
+        '
+        'dtpFechaDesde
+        '
+        Me.dtpFechaDesde.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpFechaDesde.Location = New System.Drawing.Point(151, 12)
+        Me.dtpFechaDesde.Name = "dtpFechaDesde"
+        Me.dtpFechaDesde.Size = New System.Drawing.Size(81, 20)
+        Me.dtpFechaDesde.TabIndex = 17
+        '
+        'dtpFechaHasta
+        '
+        Me.dtpFechaHasta.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpFechaHasta.Location = New System.Drawing.Point(247, 12)
+        Me.dtpFechaHasta.Name = "dtpFechaHasta"
+        Me.dtpFechaHasta.Size = New System.Drawing.Size(81, 20)
+        Me.dtpFechaHasta.TabIndex = 18
         '
         'lstGastos
         '

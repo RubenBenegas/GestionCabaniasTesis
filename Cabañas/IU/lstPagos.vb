@@ -5,7 +5,8 @@ Public Class lstPagos
 
     Private Sub lstPagos_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Pago.PagosTraerTab(frmReservas.txtId.Text, dgvPagos)
-
+        dgvPagos.RowsDefaultCellStyle.BackColor = Color.AliceBlue
+        dgvPagos.AlternatingRowsDefaultCellStyle.BackColor = Color.AntiqueWhite
     End Sub
 
     Private Sub dgvPagos_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvPagos.CellDoubleClick

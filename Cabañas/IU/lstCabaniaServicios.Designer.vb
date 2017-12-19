@@ -34,7 +34,7 @@ Partial Class lstCabaniaServicios
         '
         Me.dgvCabaniaServicios.AllowUserToAddRows = False
         Me.dgvCabaniaServicios.AllowUserToDeleteRows = False
-        Me.dgvCabaniaServicios.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.dgvCabaniaServicios.BackgroundColor = System.Drawing.SystemColors.Control
         Me.dgvCabaniaServicios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvCabaniaServicios.Location = New System.Drawing.Point(12, 12)
         Me.dgvCabaniaServicios.MultiSelect = False

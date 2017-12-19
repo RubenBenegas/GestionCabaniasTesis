@@ -22,6 +22,7 @@ Partial Class lstReservasAdicionales
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(lstReservasAdicionales))
         Me.dgvAdicionales = New System.Windows.Forms.DataGridView
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer
         Me.RectangleShape2 = New Cabañas.BotonCancelar
@@ -38,7 +39,7 @@ Partial Class lstReservasAdicionales
         Me.dgvAdicionales.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.dgvAdicionales.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.dgvAdicionales.BackgroundColor = System.Drawing.SystemColors.Control
         Me.dgvAdicionales.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvAdicionales.Location = New System.Drawing.Point(12, 12)
         Me.dgvAdicionales.MultiSelect = False
@@ -61,6 +62,7 @@ Partial Class lstReservasAdicionales
         '
         'RectangleShape2
         '
+        Me.RectangleShape2.BackgroundImage = CType(resources.GetObject("RectangleShape2.BackgroundImage"), System.Drawing.Image)
         Me.RectangleShape2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape2.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape2.CornerRadius = 13
@@ -70,6 +72,7 @@ Partial Class lstReservasAdicionales
         '
         'RectangleShape1
         '
+        Me.RectangleShape1.BackgroundImage = CType(resources.GetObject("RectangleShape1.BackgroundImage"), System.Drawing.Image)
         Me.RectangleShape1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape1.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape1.CornerRadius = 13

@@ -3,6 +3,8 @@
     Dim huesped As New Huespedes
     Private Sub lstConsHuesped_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         huesped.BuscarHuespedes(dgvConsHuesped)
+        dgvConsHuesped.RowsDefaultCellStyle.BackColor = Color.AliceBlue
+        dgvConsHuesped.AlternatingRowsDefaultCellStyle.BackColor = Color.AntiqueWhite
     End Sub
 
     Private Sub RectangleShape1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RectangleShape1.Click

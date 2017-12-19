@@ -16,6 +16,8 @@
 
     Private Sub lstReservasAdicionales_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         adicionales.BuscarAdicionales(dgvAdicionales)
+        dgvAdicionales.RowsDefaultCellStyle.BackColor = Color.AliceBlue
+        dgvAdicionales.AlternatingRowsDefaultCellStyle.BackColor = Color.AntiqueWhite
     End Sub
 
     Private Sub RectangleShape1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RectangleShape1.Click

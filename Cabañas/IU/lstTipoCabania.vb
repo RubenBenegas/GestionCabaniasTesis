@@ -4,7 +4,8 @@
     Private Sub lstcabania_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Tipocabania.TraerTipoCabania(DgvTipoCabania)
-
+        DgvTipoCabania.RowsDefaultCellStyle.BackColor = Color.AliceBlue
+        DgvTipoCabania.AlternatingRowsDefaultCellStyle.BackColor = Color.AntiqueWhite
 
     End Sub
 

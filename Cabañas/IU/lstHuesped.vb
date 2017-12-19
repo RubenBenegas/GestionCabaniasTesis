@@ -6,6 +6,8 @@ Public Class lstHuesped
     Private Sub lstHuesped_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         huesped.TraerTabHuespedes(dgvHuesped)
+        dgvHuesped.RowsDefaultCellStyle.BackColor = Color.AliceBlue
+        dgvHuesped.AlternatingRowsDefaultCellStyle.BackColor = Color.AntiqueWhite
     End Sub
 
     Private Sub dgvHuesped_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvHuesped.CellDoubleClick

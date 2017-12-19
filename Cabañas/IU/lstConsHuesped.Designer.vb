@@ -39,7 +39,7 @@ Partial Class lstConsHuesped
         Me.dgvConsHuesped.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.dgvConsHuesped.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.dgvConsHuesped.BackgroundColor = System.Drawing.SystemColors.Control
         Me.dgvConsHuesped.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvConsHuesped.Location = New System.Drawing.Point(13, 12)
         Me.dgvConsHuesped.MultiSelect = False
@@ -90,6 +90,7 @@ Partial Class lstConsHuesped
         Me.ClientSize = New System.Drawing.Size(433, 387)
         Me.Controls.Add(Me.dgvConsHuesped)
         Me.Controls.Add(Me.ShapeContainer1)
+        Me.DoubleBuffered = True
         Me.Name = "lstConsHuesped"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "lstBuscarHuesped"

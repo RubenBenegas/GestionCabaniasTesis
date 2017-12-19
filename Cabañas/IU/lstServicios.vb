@@ -4,7 +4,8 @@
     Private Sub lstServicios_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         servicio.ServicioTraerTab(dgvServicios)
-
+        dgvServicios.RowsDefaultCellStyle.BackColor = Color.AliceBlue
+        dgvServicios.AlternatingRowsDefaultCellStyle.BackColor = Color.AntiqueWhite
 
     End Sub
 

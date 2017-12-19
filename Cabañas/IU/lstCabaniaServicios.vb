@@ -17,6 +17,8 @@
     Private Sub lstCabaniaServicios_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         cabania.BuscarServicio(dgvCabaniaServicios)
+        dgvCabaniaServicios.RowsDefaultCellStyle.BackColor = Color.AliceBlue
+        dgvCabaniaServicios.AlternatingRowsDefaultCellStyle.BackColor = Color.AntiqueWhite
 
     End Sub
 

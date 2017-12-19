@@ -16,6 +16,8 @@
     Private Sub lstEstadosReservas_Load(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Load
         reservas.TraerTabReservas(dgvEstadoReservas)
         reservas.CargarComboEstados(cmbEstados)
+        dgvEstadoReservas.RowsDefaultCellStyle.BackColor = Color.AliceBlue
+        dgvEstadoReservas.AlternatingRowsDefaultCellStyle.BackColor = Color.AntiqueWhite
     End Sub
 
     Private Sub dgvEstadoReservas_CellDoubleClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles dgvEstadoReservas.CellDoubleClick
@@ -46,7 +48,6 @@
         frmReservas.txtSenia.Visible = False
 
         frmReservas.RectangleShape7.Visible = False
-        frmReservas.btnDetalleCancelacion.Visible = True
 
         'frmReservas.RectangleShape4.Visible = False
         'frmReservas.RectangleShape5.Visible = False

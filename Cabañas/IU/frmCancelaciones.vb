@@ -258,7 +258,6 @@
         frmReservas.txtSenia.Visible = False
 
         frmReservas.RectangleShape7.Visible = False
-        frmReservas.btnDetalleCancelacion.Visible = True
 
         Close()
     End Sub

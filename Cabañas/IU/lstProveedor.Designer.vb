@@ -45,7 +45,7 @@ Partial Class LstProveedor
         Me.dgvProveedores.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.dgvProveedores.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.dgvProveedores.BackgroundColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -55,7 +55,7 @@ Partial Class LstProveedor
         DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.dgvProveedores.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvProveedores.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvProveedores.Location = New System.Drawing.Point(12, 0)
+        Me.dgvProveedores.Location = New System.Drawing.Point(12, 12)
         Me.dgvProveedores.MultiSelect = False
         Me.dgvProveedores.Name = "dgvProveedores"
         Me.dgvProveedores.ReadOnly = True
@@ -64,7 +64,7 @@ Partial Class LstProveedor
         Me.dgvProveedores.RowsDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvProveedores.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.SystemColors.WindowText
         Me.dgvProveedores.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvProveedores.Size = New System.Drawing.Size(960, 422)
+        Me.dgvProveedores.Size = New System.Drawing.Size(960, 399)
         Me.dgvProveedores.TabIndex = 0
         '
         'ShapeContainer1

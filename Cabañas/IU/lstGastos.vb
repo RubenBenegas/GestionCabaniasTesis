@@ -17,6 +17,8 @@
         Gastos.verTodos(dgvGastos)
         Gastos.CargarComboCategoria(cmbCategoria)
         txtTotal.Text = Gastos.GastosCalcularTotal()
+        dgvGastos.RowsDefaultCellStyle.BackColor = Color.AliceBlue
+        dgvGastos.AlternatingRowsDefaultCellStyle.BackColor = Color.AntiqueWhite
 
     End Sub
 

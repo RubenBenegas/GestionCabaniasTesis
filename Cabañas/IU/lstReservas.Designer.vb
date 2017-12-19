@@ -42,7 +42,7 @@ Partial Class lstReservas
         Me.dgvReservas.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.dgvReservas.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(51, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(153, Byte), Integer))
+        Me.dgvReservas.BackgroundColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
         DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -73,6 +73,7 @@ Partial Class lstReservas
         '
         'RectangleShape4
         '
+        Me.RectangleShape4.BackgroundImage = CType(resources.GetObject("RectangleShape4.BackgroundImage"), System.Drawing.Image)
         Me.RectangleShape4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape4.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape4.CornerRadius = 17
@@ -120,6 +121,7 @@ Partial Class lstReservas
         Me.ClientSize = New System.Drawing.Size(984, 462)
         Me.Controls.Add(Me.dgvReservas)
         Me.Controls.Add(Me.ShapeContainer1)
+        Me.DoubleBuffered = True
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "lstReservas"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen

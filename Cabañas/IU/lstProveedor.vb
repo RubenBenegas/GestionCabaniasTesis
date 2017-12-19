@@ -5,6 +5,8 @@ Public Class LstProveedor
     Private Sub LstProveedor_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
         Proveedor.traerProveedor(dgvProveedores)
+        dgvProveedores.RowsDefaultCellStyle.BackColor = Color.AliceBlue
+        dgvProveedores.AlternatingRowsDefaultCellStyle.BackColor = Color.AntiqueWhite
 
     End Sub
 

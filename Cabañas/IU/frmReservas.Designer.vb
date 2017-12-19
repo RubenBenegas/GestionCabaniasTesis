@@ -64,8 +64,9 @@ Partial Class frmReservas
         Me.lblFechaSenia = New System.Windows.Forms.Label
         Me.txtFaltaDePagar = New System.Windows.Forms.TextBox
         Me.lblFaltaPAgar = New System.Windows.Forms.Label
-        Me.btnDetalleCancelacion = New System.Windows.Forms.Button
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer
+        Me.btnFacturaReserva = New System.Windows.Forms.Button
+        Me.btnFacturaA = New System.Windows.Forms.Button
         Me.RectangleShape9 = New Cabañas.BotonDetalleCancReserva
         Me.RectangleShape8 = New Cabañas.BotonConsulCostos
         Me.RectangleShape7 = New Cabañas.BotonCancelarRes
@@ -75,8 +76,6 @@ Partial Class frmReservas
         Me.RectangleShape3 = New Cabañas.BotonPagos
         Me.RectangleShape2 = New Cabañas.BotonEliminarFrm
         Me.RectangleShape1 = New Cabañas.BotonAgregarFrm
-        Me.btnFacturaReserva = New System.Windows.Forms.Button
-        Me.btnFacturaA = New System.Windows.Forms.Button
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvServiciosAdicionales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -513,15 +512,6 @@ Partial Class frmReservas
         Me.lblFaltaPAgar.TabIndex = 38
         Me.lblFaltaPAgar.Text = "Falta de pagar:"
         '
-        'btnDetalleCancelacion
-        '
-        Me.btnDetalleCancelacion.Location = New System.Drawing.Point(372, 496)
-        Me.btnDetalleCancelacion.Name = "btnDetalleCancelacion"
-        Me.btnDetalleCancelacion.Size = New System.Drawing.Size(114, 23)
-        Me.btnDetalleCancelacion.TabIndex = 50
-        Me.btnDetalleCancelacion.Text = "Detalle cancelacion"
-        Me.btnDetalleCancelacion.UseVisualStyleBackColor = True
-        '
         'ShapeContainer1
         '
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
@@ -532,13 +522,31 @@ Partial Class frmReservas
         Me.ShapeContainer1.TabIndex = 52
         Me.ShapeContainer1.TabStop = False
         '
+        'btnFacturaReserva
+        '
+        Me.btnFacturaReserva.Location = New System.Drawing.Point(424, 356)
+        Me.btnFacturaReserva.Name = "btnFacturaReserva"
+        Me.btnFacturaReserva.Size = New System.Drawing.Size(75, 23)
+        Me.btnFacturaReserva.TabIndex = 53
+        Me.btnFacturaReserva.Text = "Factura P"
+        Me.btnFacturaReserva.UseVisualStyleBackColor = True
+        '
+        'btnFacturaA
+        '
+        Me.btnFacturaA.Location = New System.Drawing.Point(424, 397)
+        Me.btnFacturaA.Name = "btnFacturaA"
+        Me.btnFacturaA.Size = New System.Drawing.Size(75, 23)
+        Me.btnFacturaA.TabIndex = 54
+        Me.btnFacturaA.Text = "Factura A"
+        Me.btnFacturaA.UseVisualStyleBackColor = True
+        '
         'RectangleShape9
         '
         Me.RectangleShape9.BackgroundImage = CType(resources.GetObject("RectangleShape9.BackgroundImage"), System.Drawing.Image)
         Me.RectangleShape9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape9.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape9.CornerRadius = 13
-        Me.RectangleShape9.Location = New System.Drawing.Point(380, 546)
+        Me.RectangleShape9.Location = New System.Drawing.Point(388, 509)
         Me.RectangleShape9.Name = "RectangleShape9"
         Me.RectangleShape9.Size = New System.Drawing.Size(80, 26)
         '
@@ -622,24 +630,6 @@ Partial Class frmReservas
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.Size = New System.Drawing.Size(90, 30)
         '
-        'btnFacturaReserva
-        '
-        Me.btnFacturaReserva.Location = New System.Drawing.Point(424, 356)
-        Me.btnFacturaReserva.Name = "btnFacturaReserva"
-        Me.btnFacturaReserva.Size = New System.Drawing.Size(75, 23)
-        Me.btnFacturaReserva.TabIndex = 53
-        Me.btnFacturaReserva.Text = "Factura P"
-        Me.btnFacturaReserva.UseVisualStyleBackColor = True
-        '
-        'btnFacturaA
-        '
-        Me.btnFacturaA.Location = New System.Drawing.Point(424, 397)
-        Me.btnFacturaA.Name = "btnFacturaA"
-        Me.btnFacturaA.Size = New System.Drawing.Size(75, 23)
-        Me.btnFacturaA.TabIndex = 54
-        Me.btnFacturaA.Text = "Factura A"
-        Me.btnFacturaA.UseVisualStyleBackColor = True
-        '
         'frmReservas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -649,7 +639,6 @@ Partial Class frmReservas
         Me.ClientSize = New System.Drawing.Size(514, 626)
         Me.Controls.Add(Me.btnFacturaA)
         Me.Controls.Add(Me.btnFacturaReserva)
-        Me.Controls.Add(Me.btnDetalleCancelacion)
         Me.Controls.Add(Me.dtpFechaPagoSenia)
         Me.Controls.Add(Me.lblFechaSenia)
         Me.Controls.Add(Me.lblImporteSenia)
@@ -743,7 +732,6 @@ Partial Class frmReservas
     Friend WithEvents lblFechaSenia As System.Windows.Forms.Label
     Friend WithEvents lblFaltaPAgar As System.Windows.Forms.Label
     Friend WithEvents txtFaltaDePagar As System.Windows.Forms.TextBox
-    Friend WithEvents btnDetalleCancelacion As System.Windows.Forms.Button
     Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents RectangleShape1 As Cabañas.BotonAgregarFrm
     Friend WithEvents RectangleShape2 As Cabañas.BotonEliminarFrm

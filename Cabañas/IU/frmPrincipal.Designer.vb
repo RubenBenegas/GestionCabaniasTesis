@@ -39,7 +39,6 @@ Partial Class frmPrincipal
         Me.CancelacionesToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.SalirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem
-        Me.PruebaABMReservasToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem
         Me.Panel1 = New System.Windows.Forms.Panel
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer
         Me.OvalShape3 = New Microsoft.VisualBasic.PowerPacks.OvalShape
@@ -55,7 +54,7 @@ Partial Class frmPrincipal
         Me.MenuStrip.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.MenuStrip.BackgroundImage = Global.Cabañas.My.Resources.Resources.FondoMaderaPanel
         Me.MenuStrip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileMenu, Me.SalirToolStripMenuItem, Me.ToolStripMenuItem1, Me.PruebaABMReservasToolStripMenuItem})
+        Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileMenu, Me.SalirToolStripMenuItem, Me.ToolStripMenuItem1})
         Me.MenuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.Flow
         Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip.Name = "MenuStrip"
@@ -194,12 +193,6 @@ Partial Class frmPrincipal
         Me.ToolStripMenuItem1.Name = "ToolStripMenuItem1"
         Me.ToolStripMenuItem1.Size = New System.Drawing.Size(12, 4)
         '
-        'PruebaABMReservasToolStripMenuItem
-        '
-        Me.PruebaABMReservasToolStripMenuItem.Name = "PruebaABMReservasToolStripMenuItem"
-        Me.PruebaABMReservasToolStripMenuItem.Size = New System.Drawing.Size(130, 19)
-        Me.PruebaABMReservasToolStripMenuItem.Text = "Prueba ABMReservas"
-        '
         'Panel1
         '
         Me.Panel1.BackgroundImage = Global.Cabañas.My.Resources.Resources.FondoMaderaPanel
@@ -284,7 +277,6 @@ Partial Class frmPrincipal
     Friend WithEvents TipoCabaniaToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ReservasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents PruebaABMReservasToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ServiciosToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents ToolStripMenuItem2 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents EstadoToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem

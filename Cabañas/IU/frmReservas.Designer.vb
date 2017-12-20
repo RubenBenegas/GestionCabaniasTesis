@@ -597,20 +597,20 @@ Partial Class frmReservas
         Me.RectangleShape2.BackgroundImage = CType(resources.GetObject("RectangleShape2.BackgroundImage"), System.Drawing.Image)
         Me.RectangleShape2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape2.BorderColor = System.Drawing.Color.Transparent
-        Me.RectangleShape2.CornerRadius = 15
-        Me.RectangleShape2.Location = New System.Drawing.Point(416, 271)
+        Me.RectangleShape2.CornerRadius = 12
+        Me.RectangleShape2.Location = New System.Drawing.Point(422, 271)
         Me.RectangleShape2.Name = "RectangleShape2"
-        Me.RectangleShape2.Size = New System.Drawing.Size(90, 30)
+        Me.RectangleShape2.Size = New System.Drawing.Size(80, 25)
         '
         'RectangleShape1
         '
         Me.RectangleShape1.BackgroundImage = CType(resources.GetObject("RectangleShape1.BackgroundImage"), System.Drawing.Image)
         Me.RectangleShape1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape1.BorderColor = System.Drawing.Color.Transparent
-        Me.RectangleShape1.CornerRadius = 15
-        Me.RectangleShape1.Location = New System.Drawing.Point(416, 223)
+        Me.RectangleShape1.CornerRadius = 12
+        Me.RectangleShape1.Location = New System.Drawing.Point(421, 225)
         Me.RectangleShape1.Name = "RectangleShape1"
-        Me.RectangleShape1.Size = New System.Drawing.Size(90, 30)
+        Me.RectangleShape1.Size = New System.Drawing.Size(80, 25)
         '
         'btnFacturaReserva
         '

@@ -101,12 +101,14 @@ Partial Class grafReservas
         '
         'btnListado
         '
-        Me.btnListado.Location = New System.Drawing.Point(335, 488)
+        Me.btnListado.BackColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnListado.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnListado.Location = New System.Drawing.Point(338, 489)
         Me.btnListado.Name = "btnListado"
-        Me.btnListado.Size = New System.Drawing.Size(75, 23)
+        Me.btnListado.Size = New System.Drawing.Size(90, 30)
         Me.btnListado.TabIndex = 8
         Me.btnListado.Text = "Listado"
-        Me.btnListado.UseVisualStyleBackColor = True
+        Me.btnListado.UseVisualStyleBackColor = False
         '
         'grafReservas
         '

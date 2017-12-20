@@ -65,8 +65,6 @@ Partial Class frmReservas
         Me.txtFaltaDePagar = New System.Windows.Forms.TextBox
         Me.lblFaltaPAgar = New System.Windows.Forms.Label
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer
-        Me.btnFacturaReserva = New System.Windows.Forms.Button
-        Me.btnFacturaA = New System.Windows.Forms.Button
         Me.RectangleShape9 = New Cabañas.BotonDetalleCancReserva
         Me.RectangleShape8 = New Cabañas.BotonConsulCostos
         Me.RectangleShape7 = New Cabañas.BotonCancelarRes
@@ -76,6 +74,8 @@ Partial Class frmReservas
         Me.RectangleShape3 = New Cabañas.BotonPagos
         Me.RectangleShape2 = New Cabañas.BotonEliminarFrm
         Me.RectangleShape1 = New Cabañas.BotonAgregarFrm
+        Me.btnFacturaReserva = New System.Windows.Forms.Button
+        Me.btnFacturaA = New System.Windows.Forms.Button
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.dgvServiciosAdicionales, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -522,24 +522,6 @@ Partial Class frmReservas
         Me.ShapeContainer1.TabIndex = 52
         Me.ShapeContainer1.TabStop = False
         '
-        'btnFacturaReserva
-        '
-        Me.btnFacturaReserva.Location = New System.Drawing.Point(424, 356)
-        Me.btnFacturaReserva.Name = "btnFacturaReserva"
-        Me.btnFacturaReserva.Size = New System.Drawing.Size(75, 23)
-        Me.btnFacturaReserva.TabIndex = 53
-        Me.btnFacturaReserva.Text = "Factura P"
-        Me.btnFacturaReserva.UseVisualStyleBackColor = True
-        '
-        'btnFacturaA
-        '
-        Me.btnFacturaA.Location = New System.Drawing.Point(424, 397)
-        Me.btnFacturaA.Name = "btnFacturaA"
-        Me.btnFacturaA.Size = New System.Drawing.Size(75, 23)
-        Me.btnFacturaA.TabIndex = 54
-        Me.btnFacturaA.Text = "Factura A"
-        Me.btnFacturaA.UseVisualStyleBackColor = True
-        '
         'RectangleShape9
         '
         Me.RectangleShape9.BackgroundImage = CType(resources.GetObject("RectangleShape9.BackgroundImage"), System.Drawing.Image)
@@ -629,6 +611,28 @@ Partial Class frmReservas
         Me.RectangleShape1.Location = New System.Drawing.Point(416, 223)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.Size = New System.Drawing.Size(90, 30)
+        '
+        'btnFacturaReserva
+        '
+        Me.btnFacturaReserva.BackColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnFacturaReserva.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFacturaReserva.Location = New System.Drawing.Point(424, 356)
+        Me.btnFacturaReserva.Name = "btnFacturaReserva"
+        Me.btnFacturaReserva.Size = New System.Drawing.Size(80, 30)
+        Me.btnFacturaReserva.TabIndex = 53
+        Me.btnFacturaReserva.Text = "Factura P"
+        Me.btnFacturaReserva.UseVisualStyleBackColor = False
+        '
+        'btnFacturaA
+        '
+        Me.btnFacturaA.BackColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnFacturaA.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFacturaA.Location = New System.Drawing.Point(424, 397)
+        Me.btnFacturaA.Name = "btnFacturaA"
+        Me.btnFacturaA.Size = New System.Drawing.Size(80, 30)
+        Me.btnFacturaA.TabIndex = 54
+        Me.btnFacturaA.Text = "Factura A"
+        Me.btnFacturaA.UseVisualStyleBackColor = False
         '
         'frmReservas
         '

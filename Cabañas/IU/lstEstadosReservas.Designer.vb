@@ -26,10 +26,10 @@ Partial Class lstEstadosReservas
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(lstEstadosReservas))
         Me.dgvEstadoReservas = New System.Windows.Forms.DataGridView
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer
+        Me.cmbEstados = New System.Windows.Forms.ComboBox
         Me.RectangleShape3 = New Cabañas.BotonCruz
         Me.RectangleShape2 = New Cabañas.BotonBuscar
         Me.RectangleShape1 = New Cabañas.BotonCerrar
-        Me.cmbEstados = New System.Windows.Forms.ComboBox
         CType(Me.dgvEstadoReservas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -59,7 +59,7 @@ Partial Class lstEstadosReservas
         Me.dgvEstadoReservas.ReadOnly = True
         Me.dgvEstadoReservas.RowHeadersVisible = False
         Me.dgvEstadoReservas.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvEstadoReservas.Size = New System.Drawing.Size(1032, 258)
+        Me.dgvEstadoReservas.Size = New System.Drawing.Size(960, 383)
         Me.dgvEstadoReservas.TabIndex = 0
         '
         'ShapeContainer1
@@ -68,14 +68,23 @@ Partial Class lstEstadosReservas
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
         Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape3, Me.RectangleShape2, Me.RectangleShape1})
-        Me.ShapeContainer1.Size = New System.Drawing.Size(1056, 343)
+        Me.ShapeContainer1.Size = New System.Drawing.Size(984, 468)
         Me.ShapeContainer1.TabIndex = 10
         Me.ShapeContainer1.TabStop = False
+        '
+        'cmbEstados
+        '
+        Me.cmbEstados.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbEstados.FormattingEnabled = True
+        Me.cmbEstados.Location = New System.Drawing.Point(13, 6)
+        Me.cmbEstados.Name = "cmbEstados"
+        Me.cmbEstados.Size = New System.Drawing.Size(121, 21)
+        Me.cmbEstados.TabIndex = 11
         '
         'RectangleShape3
         '
         Me.RectangleShape3.BackgroundImage = CType(resources.GetObject("RectangleShape3.BackgroundImage"), System.Drawing.Image)
-        Me.RectangleShape3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RectangleShape3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.RectangleShape3.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape3.CornerRadius = 12
         Me.RectangleShape3.Location = New System.Drawing.Point(234, 9)
@@ -98,18 +107,9 @@ Partial Class lstEstadosReservas
         Me.RectangleShape1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape1.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape1.CornerRadius = 17
-        Me.RectangleShape1.Location = New System.Drawing.Point(913, 304)
+        Me.RectangleShape1.Location = New System.Drawing.Point(845, 430)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.Size = New System.Drawing.Size(122, 35)
-        '
-        'cmbEstados
-        '
-        Me.cmbEstados.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbEstados.FormattingEnabled = True
-        Me.cmbEstados.Location = New System.Drawing.Point(13, 6)
-        Me.cmbEstados.Name = "cmbEstados"
-        Me.cmbEstados.Size = New System.Drawing.Size(121, 21)
-        Me.cmbEstados.TabIndex = 11
         '
         'lstEstadosReservas
         '
@@ -119,7 +119,7 @@ Partial Class lstEstadosReservas
         Me.BackColor = System.Drawing.Color.White
         Me.BackgroundImage = Global.Cabañas.My.Resources.Resources.FondoMaderaPanel
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1056, 343)
+        Me.ClientSize = New System.Drawing.Size(984, 468)
         Me.Controls.Add(Me.cmbEstados)
         Me.Controls.Add(Me.dgvEstadoReservas)
         Me.Controls.Add(Me.ShapeContainer1)

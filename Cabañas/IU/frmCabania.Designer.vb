@@ -40,11 +40,11 @@ Partial Class frmCabania
         Me.txtCostoServicios = New System.Windows.Forms.TextBox
         Me.btnConsultarCostos = New System.Windows.Forms.Button
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer
-        Me.ErrorProvider2 = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.RectangleShape4 = New Cabañas.BotonEliminarFrm
         Me.RectangleShape3 = New Cabañas.BotonAgregarFrm
         Me.RectangleShape2 = New Cabañas.BotonCancelar
         Me.RectangleShape1 = New Cabañas.BotonAceptar
+        Me.ErrorProvider2 = New System.Windows.Forms.ErrorProvider(Me.components)
         CType(Me.dgvCabaniaServicios, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ErrorProvider2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -211,12 +211,14 @@ Partial Class frmCabania
         '
         'btnConsultarCostos
         '
-        Me.btnConsultarCostos.Location = New System.Drawing.Point(268, 432)
+        Me.btnConsultarCostos.BackColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnConsultarCostos.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnConsultarCostos.Location = New System.Drawing.Point(265, 430)
         Me.btnConsultarCostos.Name = "btnConsultarCostos"
-        Me.btnConsultarCostos.Size = New System.Drawing.Size(99, 23)
+        Me.btnConsultarCostos.Size = New System.Drawing.Size(100, 30)
         Me.btnConsultarCostos.TabIndex = 44
         Me.btnConsultarCostos.Text = "Consultar costos"
-        Me.btnConsultarCostos.UseVisualStyleBackColor = True
+        Me.btnConsultarCostos.UseVisualStyleBackColor = False
         '
         'ShapeContainer1
         '
@@ -227,10 +229,6 @@ Partial Class frmCabania
         Me.ShapeContainer1.Size = New System.Drawing.Size(476, 519)
         Me.ShapeContainer1.TabIndex = 45
         Me.ShapeContainer1.TabStop = False
-        '
-        'ErrorProvider2
-        '
-        Me.ErrorProvider2.ContainerControl = Me
         '
         'RectangleShape4
         '
@@ -271,6 +269,10 @@ Partial Class frmCabania
         Me.RectangleShape1.Location = New System.Drawing.Point(152, 486)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.Size = New System.Drawing.Size(80, 26)
+        '
+        'ErrorProvider2
+        '
+        Me.ErrorProvider2.ContainerControl = Me
         '
         'frmCabania
         '

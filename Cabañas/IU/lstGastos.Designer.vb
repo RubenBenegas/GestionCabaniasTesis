@@ -22,21 +22,21 @@ Partial Class lstGastos
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(lstGastos))
         Me.dgvGastos = New System.Windows.Forms.DataGridView
         Me.txtTotal = New System.Windows.Forms.TextBox
         Me.Label1 = New System.Windows.Forms.Label
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer
+        Me.cmbCategoria = New System.Windows.Forms.ComboBox
+        Me.dtpFechaDesde = New System.Windows.Forms.DateTimePicker
+        Me.dtpFechaHasta = New System.Windows.Forms.DateTimePicker
         Me.RectangleShape6 = New Cabañas.BotonCruz
         Me.RectangleShape5 = New Cabañas.BotonBuscar
         Me.RectangleShape4 = New Cabañas.BotonCerrar
         Me.RectangleShape3 = New Cabañas.BotonEliminar
         Me.RectangleShape2 = New Cabañas.BotonModificar
         Me.RectangleShape1 = New Cabañas.BotonAgregar
-        Me.cmbCategoria = New System.Windows.Forms.ComboBox
-        Me.dtpFechaDesde = New System.Windows.Forms.DateTimePicker
-        Me.dtpFechaHasta = New System.Windows.Forms.DateTimePicker
         CType(Me.dgvGastos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -50,22 +50,22 @@ Partial Class lstGastos
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvGastos.BackgroundColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvGastos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvGastos.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.dgvGastos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.dgvGastos.Location = New System.Drawing.Point(12, 48)
+        Me.dgvGastos.Location = New System.Drawing.Point(10, 41)
         Me.dgvGastos.MultiSelect = False
         Me.dgvGastos.Name = "dgvGastos"
         Me.dgvGastos.ReadOnly = True
         Me.dgvGastos.RowHeadersVisible = False
         Me.dgvGastos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.dgvGastos.Size = New System.Drawing.Size(960, 367)
+        Me.dgvGastos.Size = New System.Drawing.Size(962, 371)
         Me.dgvGastos.TabIndex = 0
         '
         'txtTotal
@@ -99,10 +99,36 @@ Partial Class lstGastos
         Me.ShapeContainer1.TabIndex = 15
         Me.ShapeContainer1.TabStop = False
         '
+        'cmbCategoria
+        '
+        Me.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbCategoria.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbCategoria.FormattingEnabled = True
+        Me.cmbCategoria.Location = New System.Drawing.Point(10, 12)
+        Me.cmbCategoria.Name = "cmbCategoria"
+        Me.cmbCategoria.Size = New System.Drawing.Size(121, 23)
+        Me.cmbCategoria.TabIndex = 16
+        '
+        'dtpFechaDesde
+        '
+        Me.dtpFechaDesde.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpFechaDesde.Location = New System.Drawing.Point(151, 12)
+        Me.dtpFechaDesde.Name = "dtpFechaDesde"
+        Me.dtpFechaDesde.Size = New System.Drawing.Size(81, 20)
+        Me.dtpFechaDesde.TabIndex = 17
+        '
+        'dtpFechaHasta
+        '
+        Me.dtpFechaHasta.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpFechaHasta.Location = New System.Drawing.Point(247, 12)
+        Me.dtpFechaHasta.Name = "dtpFechaHasta"
+        Me.dtpFechaHasta.Size = New System.Drawing.Size(81, 20)
+        Me.dtpFechaHasta.TabIndex = 18
+        '
         'RectangleShape6
         '
         Me.RectangleShape6.BackgroundImage = CType(resources.GetObject("RectangleShape6.BackgroundImage"), System.Drawing.Image)
-        Me.RectangleShape6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RectangleShape6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
         Me.RectangleShape6.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape6.CornerRadius = 15
         Me.RectangleShape6.Location = New System.Drawing.Point(432, 9)
@@ -158,32 +184,6 @@ Partial Class lstGastos
         Me.RectangleShape1.Location = New System.Drawing.Point(10, 418)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.Size = New System.Drawing.Size(122, 35)
-        '
-        'cmbCategoria
-        '
-        Me.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbCategoria.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbCategoria.FormattingEnabled = True
-        Me.cmbCategoria.Location = New System.Drawing.Point(10, 12)
-        Me.cmbCategoria.Name = "cmbCategoria"
-        Me.cmbCategoria.Size = New System.Drawing.Size(121, 23)
-        Me.cmbCategoria.TabIndex = 16
-        '
-        'dtpFechaDesde
-        '
-        Me.dtpFechaDesde.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFechaDesde.Location = New System.Drawing.Point(151, 12)
-        Me.dtpFechaDesde.Name = "dtpFechaDesde"
-        Me.dtpFechaDesde.Size = New System.Drawing.Size(81, 20)
-        Me.dtpFechaDesde.TabIndex = 17
-        '
-        'dtpFechaHasta
-        '
-        Me.dtpFechaHasta.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFechaHasta.Location = New System.Drawing.Point(247, 12)
-        Me.dtpFechaHasta.Name = "dtpFechaHasta"
-        Me.dtpFechaHasta.Size = New System.Drawing.Size(81, 20)
-        Me.dtpFechaHasta.TabIndex = 18
         '
         'lstGastos
         '

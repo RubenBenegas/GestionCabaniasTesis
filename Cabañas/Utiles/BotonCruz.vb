@@ -7,7 +7,7 @@ Public Class BotonCruz
         Me.BackgroundImage = My.Resources.botonCruzMadera
         Me.BorderColor = Color.Transparent
         Me.Size = New Size(47, 30)
-        Me.BackgroundImageLayout = ImageLayout.Stretch
+        Me.BackgroundImageLayout = ImageLayout.Zoom
         Me.CornerRadius = 20
 
 

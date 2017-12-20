@@ -123,7 +123,7 @@ Partial Class lstPagos
         '
         'btnListado
         '
-        Me.btnListado.Location = New System.Drawing.Point(438, 426)
+        Me.btnListado.Location = New System.Drawing.Point(409, 426)
         Me.btnListado.Name = "btnListado"
         Me.btnListado.Size = New System.Drawing.Size(75, 23)
         Me.btnListado.TabIndex = 6

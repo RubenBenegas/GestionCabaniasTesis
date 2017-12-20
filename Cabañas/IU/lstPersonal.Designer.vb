@@ -89,7 +89,7 @@ Partial Class z
         Me.RectangleShape3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape3.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape3.CornerRadius = 17
-        Me.RectangleShape3.Location = New System.Drawing.Point(267, 425)
+        Me.RectangleShape3.Location = New System.Drawing.Point(277, 419)
         Me.RectangleShape3.Name = "RectangleShape3"
         Me.RectangleShape3.Size = New System.Drawing.Size(122, 35)
         '
@@ -99,7 +99,7 @@ Partial Class z
         Me.RectangleShape2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape2.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape2.CornerRadius = 17
-        Me.RectangleShape2.Location = New System.Drawing.Point(142, 426)
+        Me.RectangleShape2.Location = New System.Drawing.Point(152, 420)
         Me.RectangleShape2.Name = "RectangleShape2"
         Me.RectangleShape2.Size = New System.Drawing.Size(122, 35)
         '
@@ -109,13 +109,13 @@ Partial Class z
         Me.RectangleShape1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape1.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape1.CornerRadius = 17
-        Me.RectangleShape1.Location = New System.Drawing.Point(18, 425)
+        Me.RectangleShape1.Location = New System.Drawing.Point(28, 419)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.Size = New System.Drawing.Size(122, 35)
         '
         'btnDetalle
         '
-        Me.btnDetalle.Location = New System.Drawing.Point(532, 433)
+        Me.btnDetalle.Location = New System.Drawing.Point(505, 425)
         Me.btnDetalle.Name = "btnDetalle"
         Me.btnDetalle.Size = New System.Drawing.Size(75, 23)
         Me.btnDetalle.TabIndex = 5
@@ -124,7 +124,7 @@ Partial Class z
         '
         'btnListado
         '
-        Me.btnListado.Location = New System.Drawing.Point(451, 433)
+        Me.btnListado.Location = New System.Drawing.Point(424, 425)
         Me.btnListado.Name = "btnListado"
         Me.btnListado.Size = New System.Drawing.Size(75, 23)
         Me.btnListado.TabIndex = 6

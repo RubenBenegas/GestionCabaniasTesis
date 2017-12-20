@@ -124,7 +124,7 @@ Partial Class lstcabania
         '
         'btnListado
         '
-        Me.btnListado.Location = New System.Drawing.Point(493, 435)
+        Me.btnListado.Location = New System.Drawing.Point(412, 429)
         Me.btnListado.Name = "btnListado"
         Me.btnListado.Size = New System.Drawing.Size(75, 23)
         Me.btnListado.TabIndex = 6
@@ -133,7 +133,7 @@ Partial Class lstcabania
         '
         'btnDetalle
         '
-        Me.btnDetalle.Location = New System.Drawing.Point(583, 435)
+        Me.btnDetalle.Location = New System.Drawing.Point(502, 429)
         Me.btnDetalle.Name = "btnDetalle"
         Me.btnDetalle.Size = New System.Drawing.Size(75, 23)
         Me.btnDetalle.TabIndex = 7

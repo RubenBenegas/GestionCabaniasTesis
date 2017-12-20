@@ -72,15 +72,15 @@
 
     End Sub
 
-    Private Sub btnTodos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTodos.Click
-        reservas.TraerTabReservas(dgvEstadoReservas)
-    End Sub
-
     Private Sub RectangleShape1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RectangleShape1.Click
         Close()
     End Sub
 
     Private Sub RectangleShape2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RectangleShape2.Click
         reservas.ReservasFiltrarPorEstado(cmbEstados.SelectedValue, dgvEstadoReservas)
+    End Sub
+
+    Private Sub RectangleShape3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RectangleShape3.Click
+        reservas.TraerTabReservas(dgvEstadoReservas)
     End Sub
 End Class

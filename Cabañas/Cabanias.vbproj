@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{BE3CA8BE-78C3-47FF-98BA-CD4F533BBBB4}</ProjectGuid>
     <OutputType>WinExe</OutputType>
@@ -491,6 +491,9 @@
       <DependentUpon>rptListadoReservas.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="Utiles\BotonCruz.vb">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Utiles\Validaciones.vb" />
     <Compile Include="IU\frmHuesped.Designer.vb">
       <DependentUpon>frmHuesped.vb</DependentUpon>
@@ -544,90 +547,119 @@
   <ItemGroup>
     <EmbeddedResource Include="IU\frmArranque.resx">
       <DependentUpon>frmArranque.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\frmCancelaciones.resx">
       <DependentUpon>frmCancelaciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\frmPagos.resx">
       <DependentUpon>frmPagos.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\lstCabaniaServicios.resx">
       <DependentUpon>lstCabaniaServicios.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\frmAdicionales.resx">
       <DependentUpon>frmAdicionales.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\lstCancelaciones.resx">
       <DependentUpon>lstCancelaciones.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\lstEstadosReservas.resx">
       <DependentUpon>lstEstadosReservas.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\lstPagos.resx">
       <DependentUpon>lstPagos.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\lstProveedor.resx">
       <DependentUpon>lstProveedor.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\lstReservasAdicionales.resx">
       <DependentUpon>lstReservasAdicionales.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\frmServicios.resx">
       <DependentUpon>frmServicios.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\grafReservas.resx">
       <DependentUpon>grafReservas.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\lstAdicionales.resx">
       <DependentUpon>lstAdicionales.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\lstConsHuesped.resx">
       <DependentUpon>lstConsHuesped.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\frmReservas.resx">
       <DependentUpon>frmReservas.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\lstReservas.resx">
       <DependentUpon>lstReservas.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\frmCabania.resx">
       <DependentUpon>frmCabania.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\frmProveedor.resx">
       <DependentUpon>frmProveedor.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\frmGastos.resx">
       <DependentUpon>frmGastos.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\frmHuesped.resx">
       <DependentUpon>frmHuesped.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\frmPersonal.resx">
       <DependentUpon>frmPersonal.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\frmPrincipal.resx">
       <DependentUpon>frmPrincipal.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\frmTipoCabania.resx">
       <DependentUpon>frmTipoCabania.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\lstHuesped.resx">
       <DependentUpon>lstHuesped.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\lstPersonal.resx">
       <DependentUpon>lstPersonal.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\lstGastos.resx">
       <DependentUpon>lstGastos.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\lstcabania.resx">
       <DependentUpon>lstcabania.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\lstTipoCabania.resx">
       <DependentUpon>lstTipoCabania.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="IU\lstServicios.resx">
       <DependentUpon>lstServicios.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
@@ -637,48 +669,63 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmDetallaCabanias.resx">
       <DependentUpon>frmDetallaCabanias.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmDetallaHuesped.resx">
       <DependentUpon>frmDetallaHuesped.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmDetalleAdicionales.resx">
       <DependentUpon>frmDetalleAdicionales.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmDetallePersonal.resx">
       <DependentUpon>frmDetallePersonal.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmDetalleProveedores.resx">
       <DependentUpon>frmDetalleProveedores.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmFacturaAdicional.resx">
       <DependentUpon>frmFacturaAdicional.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmFacturaReserva.resx">
       <DependentUpon>frmFacturaReserva.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmListadoAdicionales.resx">
       <DependentUpon>frmListadoAdicionales.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmListadoCabanias.resx">
       <DependentUpon>frmListadoCabanias.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmListadoHuespedes.resx">
       <DependentUpon>frmListadoHuespedes.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmListadoPagos.resx">
       <DependentUpon>frmListadoPagos.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmListadoPersonal.resx">
       <DependentUpon>frmListadoPersonal.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmListadoProveedores.resx">
       <DependentUpon>frmListadoProveedores.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmListadoReservas.resx">
       <DependentUpon>frmListadoReservas.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\frmListadoServicios.resx">
       <DependentUpon>frmListadoServicios.vb</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Reportes\rptDetallaCabanias.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

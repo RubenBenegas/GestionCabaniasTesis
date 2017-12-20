@@ -76,9 +76,6 @@
 
     Dim fun As New Validaciones
 
-    Private Sub btnAceptar_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
 
     Private Sub RectangleShape1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RectangleShape1.Click
         If fun.validarCampos(Me, ErrorProvider1) = True Then

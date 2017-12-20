@@ -87,7 +87,7 @@ Partial Class lstPagos
         Me.RectangleShape4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape4.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape4.CornerRadius = 17
-        Me.RectangleShape4.Location = New System.Drawing.Point(613, 425)
+        Me.RectangleShape4.Location = New System.Drawing.Point(613, 422)
         Me.RectangleShape4.Name = "RectangleShape4"
         Me.RectangleShape4.Size = New System.Drawing.Size(122, 35)
         '
@@ -97,7 +97,7 @@ Partial Class lstPagos
         Me.RectangleShape3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape3.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape3.CornerRadius = 17
-        Me.RectangleShape3.Location = New System.Drawing.Point(255, 426)
+        Me.RectangleShape3.Location = New System.Drawing.Point(255, 423)
         Me.RectangleShape3.Name = "RectangleShape3"
         Me.RectangleShape3.Size = New System.Drawing.Size(122, 35)
         '
@@ -107,7 +107,7 @@ Partial Class lstPagos
         Me.RectangleShape2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape2.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape2.CornerRadius = 17
-        Me.RectangleShape2.Location = New System.Drawing.Point(133, 426)
+        Me.RectangleShape2.Location = New System.Drawing.Point(133, 423)
         Me.RectangleShape2.Name = "RectangleShape2"
         Me.RectangleShape2.Size = New System.Drawing.Size(122, 35)
         '
@@ -117,18 +117,20 @@ Partial Class lstPagos
         Me.RectangleShape1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape1.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape1.CornerRadius = 17
-        Me.RectangleShape1.Location = New System.Drawing.Point(15, 426)
+        Me.RectangleShape1.Location = New System.Drawing.Point(15, 422)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.Size = New System.Drawing.Size(118, 35)
         '
         'btnListado
         '
-        Me.btnListado.Location = New System.Drawing.Point(409, 426)
+        Me.btnListado.BackColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnListado.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnListado.Location = New System.Drawing.Point(455, 427)
         Me.btnListado.Name = "btnListado"
-        Me.btnListado.Size = New System.Drawing.Size(75, 23)
+        Me.btnListado.Size = New System.Drawing.Size(90, 30)
         Me.btnListado.TabIndex = 6
         Me.btnListado.Text = "Listado"
-        Me.btnListado.UseVisualStyleBackColor = True
+        Me.btnListado.UseVisualStyleBackColor = False
         '
         'lstPagos
         '

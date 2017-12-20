@@ -124,21 +124,25 @@ Partial Class lstcabania
         '
         'btnListado
         '
-        Me.btnListado.Location = New System.Drawing.Point(412, 429)
+        Me.btnListado.BackColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnListado.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnListado.Location = New System.Drawing.Point(549, 429)
         Me.btnListado.Name = "btnListado"
-        Me.btnListado.Size = New System.Drawing.Size(75, 23)
+        Me.btnListado.Size = New System.Drawing.Size(90, 30)
         Me.btnListado.TabIndex = 6
         Me.btnListado.Text = "Listado"
-        Me.btnListado.UseVisualStyleBackColor = True
+        Me.btnListado.UseVisualStyleBackColor = False
         '
         'btnDetalle
         '
-        Me.btnDetalle.Location = New System.Drawing.Point(502, 429)
+        Me.btnDetalle.BackColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnDetalle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDetalle.Location = New System.Drawing.Point(648, 429)
         Me.btnDetalle.Name = "btnDetalle"
-        Me.btnDetalle.Size = New System.Drawing.Size(75, 23)
+        Me.btnDetalle.Size = New System.Drawing.Size(90, 30)
         Me.btnDetalle.TabIndex = 7
         Me.btnDetalle.Text = "Detalle"
-        Me.btnDetalle.UseVisualStyleBackColor = True
+        Me.btnDetalle.UseVisualStyleBackColor = False
         '
         'lstcabania
         '

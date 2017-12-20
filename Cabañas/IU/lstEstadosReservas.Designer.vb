@@ -25,8 +25,8 @@ Partial Class lstEstadosReservas
         Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(lstEstadosReservas))
         Me.dgvEstadoReservas = New System.Windows.Forms.DataGridView
-        Me.btnTodos = New System.Windows.Forms.Button
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer
+        Me.RectangleShape3 = New Cabañas.BotonCruz
         Me.RectangleShape2 = New Cabañas.BotonBuscar
         Me.RectangleShape1 = New Cabañas.BotonCerrar
         Me.cmbEstados = New System.Windows.Forms.ComboBox
@@ -62,30 +62,25 @@ Partial Class lstEstadosReservas
         Me.dgvEstadoReservas.Size = New System.Drawing.Size(1032, 258)
         Me.dgvEstadoReservas.TabIndex = 0
         '
-        'btnTodos
-        '
-        Me.btnTodos.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
-        Me.btnTodos.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.btnTodos.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.btnTodos.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTodos.ForeColor = System.Drawing.Color.White
-        Me.btnTodos.Location = New System.Drawing.Point(222, 6)
-        Me.btnTodos.Margin = New System.Windows.Forms.Padding(0)
-        Me.btnTodos.Name = "btnTodos"
-        Me.btnTodos.Size = New System.Drawing.Size(47, 30)
-        Me.btnTodos.TabIndex = 8
-        Me.btnTodos.Text = "X"
-        Me.btnTodos.UseVisualStyleBackColor = False
-        '
         'ShapeContainer1
         '
         Me.ShapeContainer1.Location = New System.Drawing.Point(0, 0)
         Me.ShapeContainer1.Margin = New System.Windows.Forms.Padding(0)
         Me.ShapeContainer1.Name = "ShapeContainer1"
-        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape2, Me.RectangleShape1})
+        Me.ShapeContainer1.Shapes.AddRange(New Microsoft.VisualBasic.PowerPacks.Shape() {Me.RectangleShape3, Me.RectangleShape2, Me.RectangleShape1})
         Me.ShapeContainer1.Size = New System.Drawing.Size(1056, 343)
         Me.ShapeContainer1.TabIndex = 10
         Me.ShapeContainer1.TabStop = False
+        '
+        'RectangleShape3
+        '
+        Me.RectangleShape3.BackgroundImage = CType(resources.GetObject("RectangleShape3.BackgroundImage"), System.Drawing.Image)
+        Me.RectangleShape3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
+        Me.RectangleShape3.BorderColor = System.Drawing.Color.Transparent
+        Me.RectangleShape3.CornerRadius = 12
+        Me.RectangleShape3.Location = New System.Drawing.Point(234, 9)
+        Me.RectangleShape3.Name = "RectangleShape3"
+        Me.RectangleShape3.Size = New System.Drawing.Size(40, 25)
         '
         'RectangleShape2
         '
@@ -126,7 +121,6 @@ Partial Class lstEstadosReservas
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.ClientSize = New System.Drawing.Size(1056, 343)
         Me.Controls.Add(Me.cmbEstados)
-        Me.Controls.Add(Me.btnTodos)
         Me.Controls.Add(Me.dgvEstadoReservas)
         Me.Controls.Add(Me.ShapeContainer1)
         Me.DoubleBuffered = True
@@ -138,9 +132,9 @@ Partial Class lstEstadosReservas
 
     End Sub
     Friend WithEvents dgvEstadoReservas As System.Windows.Forms.DataGridView
-    Friend WithEvents btnTodos As System.Windows.Forms.Button
     Friend WithEvents ShapeContainer1 As Microsoft.VisualBasic.PowerPacks.ShapeContainer
     Friend WithEvents RectangleShape1 As Cabañas.BotonCerrar
     Friend WithEvents cmbEstados As System.Windows.Forms.ComboBox
     Friend WithEvents RectangleShape2 As Cabañas.BotonBuscar
+    Friend WithEvents RectangleShape3 As Cabañas.BotonCruz
 End Class

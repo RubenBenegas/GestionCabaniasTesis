@@ -4,7 +4,6 @@ Public Class BotonAceptar
 
 
     Inherits RectangleShape
-
     Public Sub New()
         Me.BackgroundImage = My.Resources.BotonAceptarMaderaNegro
         Me.BorderColor = Color.Transparent
@@ -15,6 +14,7 @@ Public Class BotonAceptar
 
 
     End Sub
+
 
     Private Sub me_MouseHover(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Me.MouseHover
         Me.BackgroundImage = My.Resources.BotonAceptarMaderaBlanco

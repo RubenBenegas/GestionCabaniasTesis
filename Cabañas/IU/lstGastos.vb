@@ -43,7 +43,7 @@
 
     End Sub
 
-    Private Sub btnTodos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnTodos.Click
+    Private Sub btnTodos_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         Gastos.verTodos(dgvGastos)
         txtTotal.Text = Gastos.GastosCalcularTotal
     End Sub
@@ -82,5 +82,10 @@
         Gastos.GastosFiltrarPorCategoria(cmbCategoria.SelectedValue, dtpFechaDesde.Value, dtpFechaHasta.Value, dgvGastos)
         txtTotal.Text = Gastos.GastosCalcularPorCategoria(cmbCategoria.SelectedValue, dtpFechaDesde.Value, dtpFechaHasta.Value)
 
+    End Sub
+
+    Private Sub RectangleShape6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RectangleShape6.Click
+        Gastos.verTodos(dgvGastos)
+        txtTotal.Text = Gastos.GastosCalcularTotal
     End Sub
 End Class

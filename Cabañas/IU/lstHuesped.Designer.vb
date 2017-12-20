@@ -22,7 +22,7 @@ Partial Class lstHuesped
     'No lo modifique con el editor de código.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(lstHuesped))
         Me.dgvHuesped = New System.Windows.Forms.DataGridView
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer
@@ -45,14 +45,14 @@ Partial Class lstHuesped
                     Or System.Windows.Forms.AnchorStyles.Left) _
                     Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.dgvHuesped.BackgroundColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.dgvHuesped.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.dgvHuesped.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.dgvHuesped.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgvHuesped.Location = New System.Drawing.Point(12, 12)
         Me.dgvHuesped.MultiSelect = False
@@ -89,7 +89,7 @@ Partial Class lstHuesped
         Me.RectangleShape3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape3.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape3.CornerRadius = 17
-        Me.RectangleShape3.Location = New System.Drawing.Point(265, 418)
+        Me.RectangleShape3.Location = New System.Drawing.Point(265, 420)
         Me.RectangleShape3.Name = "RectangleShape3"
         Me.RectangleShape3.Size = New System.Drawing.Size(122, 35)
         '
@@ -99,7 +99,7 @@ Partial Class lstHuesped
         Me.RectangleShape2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape2.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape2.CornerRadius = 17
-        Me.RectangleShape2.Location = New System.Drawing.Point(142, 417)
+        Me.RectangleShape2.Location = New System.Drawing.Point(142, 420)
         Me.RectangleShape2.Name = "RectangleShape2"
         Me.RectangleShape2.Size = New System.Drawing.Size(122, 35)
         '
@@ -109,27 +109,31 @@ Partial Class lstHuesped
         Me.RectangleShape1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
         Me.RectangleShape1.BorderColor = System.Drawing.Color.Transparent
         Me.RectangleShape1.CornerRadius = 15
-        Me.RectangleShape1.Location = New System.Drawing.Point(15, 417)
+        Me.RectangleShape1.Location = New System.Drawing.Point(15, 419)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.Size = New System.Drawing.Size(122, 35)
         '
         'btnListado
         '
-        Me.btnListado.Location = New System.Drawing.Point(417, 420)
+        Me.btnListado.BackColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnListado.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnListado.Location = New System.Drawing.Point(571, 423)
         Me.btnListado.Name = "btnListado"
-        Me.btnListado.Size = New System.Drawing.Size(75, 23)
+        Me.btnListado.Size = New System.Drawing.Size(90, 30)
         Me.btnListado.TabIndex = 6
         Me.btnListado.Text = "Listado"
-        Me.btnListado.UseVisualStyleBackColor = True
+        Me.btnListado.UseVisualStyleBackColor = False
         '
         'btnDetalle
         '
-        Me.btnDetalle.Location = New System.Drawing.Point(508, 420)
+        Me.btnDetalle.BackColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.btnDetalle.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnDetalle.Location = New System.Drawing.Point(672, 423)
         Me.btnDetalle.Name = "btnDetalle"
-        Me.btnDetalle.Size = New System.Drawing.Size(75, 23)
+        Me.btnDetalle.Size = New System.Drawing.Size(90, 30)
         Me.btnDetalle.TabIndex = 7
         Me.btnDetalle.Text = "Detalle"
-        Me.btnDetalle.UseVisualStyleBackColor = True
+        Me.btnDetalle.UseVisualStyleBackColor = False
         '
         'lstHuesped
         '

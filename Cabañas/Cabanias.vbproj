@@ -773,6 +773,7 @@
     <None Include="Resources\BotonActualizarMaderaBlanco.png" />
     <Content Include="Resources\BotonCerrar1.png" />
     <Content Include="Resources\BotonCerrar2.png" />
+    <None Include="Resources\botonCruzMadera.png" />
     <None Include="Resources\BotonNuevaReservaMaderaBlanco.png" />
     <None Include="Resources\BotonNuevaReservaMaderaNegro.png" />
     <None Include="Resources\IconoHuespedSombra2.png" />

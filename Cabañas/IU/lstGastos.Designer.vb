@@ -28,15 +28,15 @@ Partial Class lstGastos
         Me.txtTotal = New System.Windows.Forms.TextBox
         Me.Label1 = New System.Windows.Forms.Label
         Me.ShapeContainer1 = New Microsoft.VisualBasic.PowerPacks.ShapeContainer
-        Me.cmbCategoria = New System.Windows.Forms.ComboBox
-        Me.dtpFechaDesde = New System.Windows.Forms.DateTimePicker
-        Me.dtpFechaHasta = New System.Windows.Forms.DateTimePicker
         Me.RectangleShape6 = New Cabañas.BotonCruz
         Me.RectangleShape5 = New Cabañas.BotonBuscar
         Me.RectangleShape4 = New Cabañas.BotonCerrar
         Me.RectangleShape3 = New Cabañas.BotonEliminar
         Me.RectangleShape2 = New Cabañas.BotonModificar
         Me.RectangleShape1 = New Cabañas.BotonAgregar
+        Me.cmbCategoria = New System.Windows.Forms.ComboBox
+        Me.dtpFechaDesde = New System.Windows.Forms.DateTimePicker
+        Me.dtpFechaHasta = New System.Windows.Forms.DateTimePicker
         CType(Me.dgvGastos, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -72,7 +72,7 @@ Partial Class lstGastos
         '
         Me.txtTotal.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.txtTotal.Enabled = False
-        Me.txtTotal.Location = New System.Drawing.Point(547, 434)
+        Me.txtTotal.Location = New System.Drawing.Point(558, 429)
         Me.txtTotal.Name = "txtTotal"
         Me.txtTotal.Size = New System.Drawing.Size(137, 20)
         Me.txtTotal.TabIndex = 9
@@ -82,9 +82,9 @@ Partial Class lstGastos
         '
         Me.Label1.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.FromArgb(CType(CType(204, Byte), Integer), CType(CType(102, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(477, 434)
+        Me.Label1.Location = New System.Drawing.Point(488, 429)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(55, 20)
         Me.Label1.TabIndex = 14
@@ -99,32 +99,6 @@ Partial Class lstGastos
         Me.ShapeContainer1.Size = New System.Drawing.Size(984, 461)
         Me.ShapeContainer1.TabIndex = 15
         Me.ShapeContainer1.TabStop = False
-        '
-        'cmbCategoria
-        '
-        Me.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmbCategoria.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cmbCategoria.FormattingEnabled = True
-        Me.cmbCategoria.Location = New System.Drawing.Point(10, 12)
-        Me.cmbCategoria.Name = "cmbCategoria"
-        Me.cmbCategoria.Size = New System.Drawing.Size(121, 23)
-        Me.cmbCategoria.TabIndex = 16
-        '
-        'dtpFechaDesde
-        '
-        Me.dtpFechaDesde.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFechaDesde.Location = New System.Drawing.Point(151, 12)
-        Me.dtpFechaDesde.Name = "dtpFechaDesde"
-        Me.dtpFechaDesde.Size = New System.Drawing.Size(81, 20)
-        Me.dtpFechaDesde.TabIndex = 17
-        '
-        'dtpFechaHasta
-        '
-        Me.dtpFechaHasta.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
-        Me.dtpFechaHasta.Location = New System.Drawing.Point(247, 12)
-        Me.dtpFechaHasta.Name = "dtpFechaHasta"
-        Me.dtpFechaHasta.Size = New System.Drawing.Size(81, 20)
-        Me.dtpFechaHasta.TabIndex = 18
         '
         'RectangleShape6
         '
@@ -185,6 +159,32 @@ Partial Class lstGastos
         Me.RectangleShape1.Location = New System.Drawing.Point(10, 418)
         Me.RectangleShape1.Name = "RectangleShape1"
         Me.RectangleShape1.Size = New System.Drawing.Size(122, 35)
+        '
+        'cmbCategoria
+        '
+        Me.cmbCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmbCategoria.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmbCategoria.FormattingEnabled = True
+        Me.cmbCategoria.Location = New System.Drawing.Point(10, 12)
+        Me.cmbCategoria.Name = "cmbCategoria"
+        Me.cmbCategoria.Size = New System.Drawing.Size(121, 23)
+        Me.cmbCategoria.TabIndex = 16
+        '
+        'dtpFechaDesde
+        '
+        Me.dtpFechaDesde.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpFechaDesde.Location = New System.Drawing.Point(151, 12)
+        Me.dtpFechaDesde.Name = "dtpFechaDesde"
+        Me.dtpFechaDesde.Size = New System.Drawing.Size(81, 20)
+        Me.dtpFechaDesde.TabIndex = 17
+        '
+        'dtpFechaHasta
+        '
+        Me.dtpFechaHasta.Format = System.Windows.Forms.DateTimePickerFormat.[Short]
+        Me.dtpFechaHasta.Location = New System.Drawing.Point(247, 12)
+        Me.dtpFechaHasta.Name = "dtpFechaHasta"
+        Me.dtpFechaHasta.Size = New System.Drawing.Size(81, 20)
+        Me.dtpFechaHasta.TabIndex = 18
         '
         'lstGastos
         '
